@@ -1,0 +1,5 @@
+1. Create Lockscreen
+2. add carousel to hero
+3. fix height of carousel
+4. fix the rooms label in carousel
+5. add scrollbar
