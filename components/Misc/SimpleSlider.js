@@ -34,15 +34,16 @@ export default function SimpleSlider({
   speed,
   autoPlaySpeed,
   infinite,
+  arrows
 }) {
   var settings = {
-    dots: true,
+    dots: dots,
     infinite: infinite,
-    speed: 500,
+    speed: speed,
     slidesToShow: noOfSlides,
     slidesToScroll: 1,
     initialSlide: 0,
-    arrows: true,
+    arrows: arrows,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     autoplay: autoPlay,

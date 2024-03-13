@@ -143,3 +143,8 @@ export const CONCIERGE = [
     src: "assets/img/slider/image19.jpg",
   },
 ];
+
+export const HERO_IMAGES = [
+  {src:"/Banner-image11.png"},
+  {src:"/Banner-image22.png"},
+]

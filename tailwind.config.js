@@ -19,6 +19,8 @@ module.exports = {
       colors:{
         'lineGray':"#666666",
         'luxuri-golden':"#E49E34",
+      },screens: {
+        'se': '400px',
       },
     },
   },

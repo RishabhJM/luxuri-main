@@ -1,4 +1,3 @@
-import { ProgressBar } from "@nadfri/react-scroll-progress-bar";
 import Footer from "./Footer";
 import Nav from "./Nav";
 import SideScroll from "./SideScroll";
@@ -12,7 +11,7 @@ export default function Layout({ children }) {
       <div className="flex justify-between">
         <Socials></Socials>
         {children}
-        {/* <SideScroll></SideScroll> */}
+        <SideScroll></SideScroll>
       </div>
       <Footer></Footer>
     </div>
