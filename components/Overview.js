@@ -4,9 +4,9 @@ import Image from "next/image";
 
 export default function Overview() {
   return (
-    <div className="m-10">
+    <div className="my-20 h-fit">
       <div className="text-center">
-        <h3 class="text-5xl pb-10">OVERVIEW</h3>
+        <h3 class=" text-4xl sm:text-5xl pb-10">OVERVIEW</h3>
         <p class="pb-32">
           A private equity fund established to capitalize on realestate
           investment opportunities and the lack of supply inhigh-end Short-Term
@@ -15,8 +15,8 @@ export default function Overview() {
           rental marketareas, initially in South Florida and Aspen.
         </p>
       </div>
-      <div className="flex justify-center">
-        <Image
+      <div className="flex md:flex-row flex-col justify-center">
+        <div className="flex se:flex-row flex-col justify-center"><Image
           height={500}
           width={300}
           class="f4roundimg"
@@ -29,21 +29,21 @@ export default function Overview() {
           class="f4roundimg"
           src="/Design-1.png"
           alt=""
-        />
-        <Image
+        /></div>
+        <div className="flex se:flex-row flex-col"><Image
           height={500}
           width={300}
           class="f4roundimg"
-          src="/Renting-1.png"
+          src="/Rent-1.png"
           alt=""
         />
         <Image
           height={500}
           width={300}
           class="f4roundimg"
-          src="/Holding-1.png"
+          src="/hold-1.png"
           alt=""
-        />
+        /></div>
       </div>
     </div>
   );

@@ -3,3 +3,4 @@
 3. fix height of carousel
 4. fix the rooms label in carousel
 5. add scrollbar
+6. click to enlarge image in debtstr component

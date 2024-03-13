@@ -3,19 +3,19 @@ import React from "react";
 
 export default function Partner() {
   return (
-    <div class="h-screen m-10">
-      <h3 class="pb-10 font-italiana text-7xl text-center mb-3">
+    <div class="h-fit m-2 se:m-10">
+      <h3 class="pb-10 font-italiana text-3xl se:text-5xl md:text-7xl text-center mb-3">
         Key Partner : LUXURI
       </h3>
-      <div class="flex">
-        <div class="w-1/2 pr-16">
+      <div class="flex lg:flex-row flex-col">
+        <div class="lg:w-1/2 pb-10">
           <div className="pb-6">
             <h6 class="pb-6 text-2xl font-semibold">
               Luxuri® is the largest luxury residential property management
               company in Florida and Aspen
             </h6>
             <div class="border-l-8 border-gray-600 py-4">
-              <div class="text-lg pl-4">
+              <div class="text-md se:text-lg pl-4">
                 With a well known CEO, 14 agents, 25 staff, and a network of
                 trusted service providers, we satisfy the exacting standards of
                 our guests and deliver powerful returns for our business
@@ -29,7 +29,7 @@ export default function Partner() {
             Marriott’s Bonvoy home rental program.
           </h6>
           <div class="border-l-8 border-gray-600 py-4">
-            <div class="text-lg pl-4">
+            <div class="text-md se:text-lg pl-4">
               We pride ourselves on repeat business and know that our clients
               are happy to spend more money with us when they have a great
               experience. From their first experience to their last, our clients
@@ -40,7 +40,7 @@ export default function Partner() {
             </div>
           </div>
         </div>
-        <div class="w-1/2">
+        <div class="lg:w-1/2">
           <div class="border-t-2 border-gray-600">
             <div className="py-2">
               <span class="number-gol font-italiana pr-4">$750M</span>

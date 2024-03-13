@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Process() {
   return (
-    <div className="h-screen m-10">
-      <h3 className="pb-20 font-italiana text-5xl text-center mb-3">
+    <div className="h-fit py-20 m-2 se:m-10">
+      <h3 className="pb-20 font-italiana text-3xl se:text-5xl md:text-7xl text-center mb-3">
         PROCESS: ACQUISITION TO BOOKING
       </h3>
 

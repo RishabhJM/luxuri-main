@@ -58,8 +58,8 @@ export default function AsTable() {
   });
 
   return (
-    <div className="p-2 m-10 mx-auto text-white h-screen">
-      <h3 class="text-center text-5xl font-italiana mb-10">
+    <div className="p-2 m-2 se:m-10 mx-auto text-white h-fit">
+      <h3 class="text-center text-3xl se:text-5xl md:text-7xl font-italiana mb-10">
         DUE DILIGENCED PROPERTIES: ASPEN
       </h3>
       <div className="px-20">

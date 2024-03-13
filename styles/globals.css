@@ -71,25 +71,19 @@ body {
 }
 .text-h4 {
   color: #fdd599;
-  font-size: 14px;
   font-style: normal;
   font-weight: 600;
   padding-left: 5px;
   line-height: normal;
   padding-right: 20px;
-  text-align: left;
-  width: 43%;
   letter-spacing: 1px;
   line-height: 21px;
 }
 .text-p4 {
   color: #fff;
-  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 57%;
-  text-align: left;
 }
 
 .border-style {
@@ -102,16 +96,9 @@ body {
 .text-p3 {
   width: 25%;
 }
-.text-h4 {
-  width: 47%;
-}
-.text-p4 {
-  width: 53%;
-}
 
 .number-gol {
   color: #febe58;
-  font-size: 78.77px;
   font-style: normal;
   line-height: 132.662%; /* 104.498px */
 }
@@ -142,7 +129,7 @@ body {
   background-color: #b56c00;
 }
 .col-btn {
-  margin-right: 20px;
+  margin: 10px 20px 0 0;
 }
 
 .f4roundimg2 {

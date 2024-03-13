@@ -7,12 +7,12 @@ export default function CompAdv() {
     const boxText = "text-sm text-center";
     const imgStyle = "flex justify-center pb-4";
   return (
-    <div className="h-screen m-10">
-      <h3 className="pb-20 font-italiana text-5xl text-center mb-3">
+    <div className="h-fit m-10 py-20">
+      <h3 className="pb-20 font-italiana text-3xl se:text-5xl md:text-7xl text-center mb-3">
         LUXURI : COMPETITIVE ADVANTAGE
       </h3>
-      <div className="mx-20">
-        <div className="flex">
+      <div className="lg:mx-20">
+        <div className="flex lg:flex-row flex-col">
           <div className={boxStyle}>
             <div className={imgStyle}>
               <Image width={50} height={50} src="/noun-experience-63014821.svg" alt="" />
@@ -48,7 +48,7 @@ export default function CompAdv() {
             </p>
           </div>
         </div>
-        <div className="flex">
+        <div className="flex lg:flex-row flex-col">
           <div className={boxStyle}>
             <div className={imgStyle}>
               <Image width={50} height={50} src="/Group-4.svg" alt="" />

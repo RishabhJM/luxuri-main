@@ -20,7 +20,7 @@ module.exports = {
         'lineGray':"#666666",
         'luxuri-golden':"#E49E34",
       },screens: {
-        'se': '400px',
+        'se': '440px',
       },
     },
   },
