@@ -17,7 +17,7 @@ import Team from "@/components/Team";
 export default function Home() {
   return (
     <Layout>
-      <div className="w-full overflow-y-auto h-screen no-scrollbar">
+      <div className="w-full overflow-y-auto overflow-x-hidden h-screen no-scrollbar">
         <div id="home"><Hero></Hero></div>
         <div id="overview"><Overview></Overview></div>
         <div id="invstr"><InvestStrat></InvestStrat></div>

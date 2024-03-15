@@ -61,7 +61,7 @@ export default function SFTable() {
       <h3 class="md:text-center text-3xl se:text-5xl md:text-7xl font-italiana mb-10">
         DUE DILIGENCED PROPERTIES: SOUTH FLORIDA
       </h3>
-      <div className="md:px-10 lg:px-20  overflow-x-scroll no-scrollbar">
+      <div className="md:px-10 lg:px-20">
         <div className="flex justify-between mb-2">
           <div className="w-full flex items-center gap-1">
             <svg
