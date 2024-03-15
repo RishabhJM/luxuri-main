@@ -57,11 +57,11 @@ export default function SFTable() {
   });
 
   return (
-    <div className="p-2 m-2 se:m-10 mx-auto text-white h-fit">
-      <h3 class="text-center text-3xl se:text-5xl md:text-7xl font-italiana mb-10">
+    <div className="m-2 py-20 se:m-10 mx-auto text-white h-fit w-[80vw] overflow-x-scroll no-scrollbar">
+      <h3 class="md:text-center text-3xl se:text-5xl md:text-7xl font-italiana mb-10">
         DUE DILIGENCED PROPERTIES: SOUTH FLORIDA
       </h3>
-      <div className="px-10 md:px-20">
+      <div className="md:px-10 lg:px-20  overflow-x-scroll no-scrollbar">
         <div className="flex justify-between mb-2">
           <div className="w-full flex items-center gap-1">
             <svg

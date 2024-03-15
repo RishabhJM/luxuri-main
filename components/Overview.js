@@ -15,35 +15,39 @@ export default function Overview() {
           rental marketareas, initially in South Florida and Aspen.
         </p>
       </div>
-      <div className="flex md:flex-row flex-col justify-center">
-        <div className="flex se:flex-row flex-col justify-center"><Image
-          height={500}
-          width={300}
-          class="f4roundimg"
-          src="/Acquire-1.png"
-          alt=""
-        />
-        <Image
-          height={500}
-          width={300}
-          class="f4roundimg"
-          src="/Design-1.png"
-          alt=""
-        /></div>
-        <div className="flex se:flex-row flex-col"><Image
-          height={500}
-          width={300}
-          class="f4roundimg"
-          src="/Rent-1.png"
-          alt=""
-        />
-        <Image
-          height={500}
-          width={300}
-          class="f4roundimg"
-          src="/hold-1.png"
-          alt=""
-        /></div>
+      <div className="flex lg:flex-row flex-col justify-center">
+        <div className="flex md:flex-row flex-col justify-center">
+          <Image
+            height={500}
+            width={300}
+            class="f4roundimg"
+            src="/Acquire-1.png"
+            alt=""
+          />
+          <Image
+            height={500}
+            width={300}
+            class="f4roundimg"
+            src="/Design-1.png"
+            alt=""
+          />
+        </div>
+        <div className="flex md:flex-row flex-col justify-center">
+          <Image
+            height={500}
+            width={300}
+            class="f4roundimg"
+            src="/Rent-1.png"
+            alt=""
+          />
+          <Image
+            height={500}
+            width={300}
+            class="f4roundimg"
+            src="/hold-1.png"
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );

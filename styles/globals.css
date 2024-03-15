@@ -195,7 +195,7 @@ body {
   transition: all 0.5s ease;
 }
 
-#category-buttons {
+.category-buttons {
   /* position: fixed; */
   /* bottom: 7%; */
   text-align: center;

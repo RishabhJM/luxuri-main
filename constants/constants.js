@@ -1,9 +1,9 @@
 export const NAV_LINKS = [
-  { href: "/home", key: "home", label: "HOME" },
-  { href: "/overview", key: "overview", label: "OVERVIEW" },
-  { href: "/invstr", key: "invstr", label: "INVESTMENT STRUCTURE" },
-  { href: "/whyus", key: "whyus", label: "WHY LUXURI" },
-  { href: "/concierge", key: "concierge", label: "CONCIERGE" },
+  { href: "#home", key: "home", label: "HOME" },
+  { href: "#overview", key: "overview", label: "OVERVIEW" },
+  { href: "#invstr", key: "invstr", label: "INVESTMENT STRUCTURE" },
+  { href: "#whyus", key: "whyus", label: "WHY LUXURI" },
+  { href: "#concierge", key: "concierge", label: "CONCIERGE" },
 ];
 
 export const SOCIAL_LINKS = [
@@ -68,79 +68,79 @@ export const PROPERTIES_DATA = [
 export const CONCIERGE = [
   {
     title: "IN-HOUSE GOURMET CHEF",
-    src: "assets/img/In-HouseGourmetChef.svg",
+    src: "/slider/image1.jpg",
   },
   {
     title: "YATCH CHARTER",
-    src: "assets/img/slider/image3.jpg",
+    src: "/slider/image3.jpg",
   },
   {
     title: "PRIVATE JET",
-    src: "assets/img/slider/image2.jpg",
+    src: "/slider/image2.jpg",
   },
   {
     title: "PRIVATE DRIVER",
-    src: "assets/img/slider/image4.jpg",
+    src: "/slider/image4.jpg",
   },
   {
     title: "IN-HOUSE MASSAGE",
-    src: "assets/img/slider/image5.jpg",
+    src: "/slider/image5.jpg",
   },
   {
     title: "RESTAURANT ACCESS",
-    src: "assets/img/slider/image6.jpg",
+    src: "/slider/image6.jpg",
   },
   {
     title: "EXCLUSIVE EVENT ACCESS",
-    src: "assets/img/slider/image7.jpg",
+    src: "/slider/image7.jpg",
   },
   {
     title: "IN-HOUSE FACIALS",
-    src: "assets/img/slider/image8.jpg",
+    src: "/slider/image8.jpg",
   },
   {
     title: "EVENT PLANNER",
-    src: "assets/img/slider/image9.jpg",
+    src: "/slider/image9.jpg",
   },
   {
     title: "DAILY CLEANING",
-    src: "assets/img/slider/image10.jpg",
+    src: "/slider/image10.jpg",
   },
   {
     title: "HELI SKIING",
-    src: "assets/img/slider/image11.jpg",
+    src: "/slider/image11.jpg",
   },
   {
     title: "AIRPORT TRANSFER",
-    src: "assets/img/slider/image12.jpg",
+    src: "/slider/image12.jpg",
   },
   {
     title: "PHOTOGRAPHER",
-    src: "assets/img/slider/image13.jpg",
+    src: "/slider/image13.jpg",
   },
   {
     title: "NIGHTCLUB/LOUNGE ACCESS",
-    src: "assets/img/slider/image14.jpg",
+    src: "/slider/image14.jpg",
   },
   {
     title: "PERSONAL SHOPPER",
-    src: "assets/img/slider/image15.jpg",
+    src: "/slider/image15.jpg",
   },
   {
     title: "SPRINTER SERVICES",
-    src: "assets/img/slider/image16.jpg",
+    src: "/slider/image16.jpg",
   },
   {
     title: "PRIVATE SECURITY",
-    src: "assets/img/slider/image17.jpg",
+    src: "/slider/image17.jpg",
   },
   {
     title: "BABY SITTER / NANNY",
-    src: "assets/img/slider/image18.jpg",
+    src: "/slider/image18.jpg",
   },
   {
     title: "JET SKI RENTALS",
-    src: "assets/img/slider/image19.jpg",
+    src: "/slider/image19.jpg",
   },
 ];
 

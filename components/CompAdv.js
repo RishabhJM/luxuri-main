@@ -2,12 +2,12 @@ import Image from "next/image";
 import React from "react";
 
 export default function CompAdv() {
-    const boxStyle = "border-white border-2 rounded-2xl p-8 w-1/3 m-2";
+    const boxStyle = "border-white border-2 rounded-2xl p-4 md:p-8 lg:w-1/3 m-2";
     const boxHeading = "text-xl font-bold text-center pb-4";
     const boxText = "text-sm text-center";
     const imgStyle = "flex justify-center pb-4";
   return (
-    <div className="h-fit m-10 py-20">
+    <div className="h-fit md:m-10 py-20">
       <h3 className="pb-20 font-italiana text-3xl se:text-5xl md:text-7xl text-center mb-3">
         LUXURI : COMPETITIVE ADVANTAGE
       </h3>

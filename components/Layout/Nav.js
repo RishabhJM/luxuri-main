@@ -58,7 +58,7 @@ export default function Nav() {
         <div className="lg:hidden w-auto flex justify-center text-center">
           <nav className="flex flex-col">
             {NAV_LINKS.map((item) => (
-              <Link href={item.href} key={item.key} className="p-4">
+              <Link href={item.href} key={item.key} className="p-4" onClick={() => setOpenNav(!openNav)}>
                 {item.label}
               </Link>
             ))}

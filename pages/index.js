@@ -18,21 +18,21 @@ export default function Home() {
   return (
     <Layout>
       <div className="w-full overflow-y-auto h-screen no-scrollbar">
-        <Hero></Hero>
-        <Overview></Overview>
-        <InvestStrat></InvestStrat>
+        <div id="home"><Hero></Hero></div>
+        <div id="overview"><Overview></Overview></div>
+        <div id="invstr"><InvestStrat></InvestStrat></div>
         <DebtStr></DebtStr>
         <Education></Education>
         <Map></Map>
         <Team></Team>
         <Partner></Partner>
-        <CompAdv></CompAdv>
+        <div id="whyus"><CompAdv></CompAdv></div>
         <Process></Process>
         <SFTable></SFTable>
         <AsTable></AsTable>
         <Booking></Booking>
         {/* <Chef></Chef> */}
-        <Concierge></Concierge>
+        <div id="concierge"><Concierge></Concierge></div>
       </div>
     </Layout>
   );
