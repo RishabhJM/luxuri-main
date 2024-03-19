@@ -136,7 +136,7 @@ export default function SFTable() {
           </tbody>
         </table>
         {/* pagination */}
-        <div className="flex items-center justify-end mt-2 gap-2">
+        <div className="flex items-center se:justify-end mt-2 gap-2">
           <button
             onClick={() => {
               table.previousPage();

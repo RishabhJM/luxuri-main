@@ -1,10 +1,13 @@
 import { NAV_LINKS } from "@/constants/constants";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
+  const router = useRouter();
+  const isActive = (href) => router.pathname.includes(href);
   return (
     <div className="flex lg:flex-row flex-col justify-between py-4 px-10 bg-opacity-0 text-white">
       <div className="lg:w-fit w-auto flex justify-between items-center">
@@ -61,7 +64,9 @@ export default function Nav() {
               <Link
                 href={item.href}
                 key={item.key}
-                className="p-4"
+                className={
+                  isActive(item.href) ? "p-4 text-[#FD9E0F]" : "p-4 text-white"
+                }
                 onClick={() => setOpenNav(!openNav)}
               >
                 {item.label}
@@ -72,7 +77,13 @@ export default function Nav() {
       )}
       <nav className="w-1/2 hidden lg:flex justify-between text-md">
         {NAV_LINKS.map((item) => (
-          <Link href={item.href} key={item.key} className="p-4">
+          <Link
+            href={item.href}
+            key={item.key}
+            className={
+              isActive(item.href) ? "p-4 text-[#FD9E0F]" : "p-4 text-white"
+            }
+          >
             {item.label}
           </Link>
         ))}

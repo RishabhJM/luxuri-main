@@ -3,18 +3,20 @@ import React from "react";
 import ProgressLine from "./Misc/ProgressLine";
 import SimpleSlider from "./Misc/SimpleSlider";
 import { HERO_IMAGES } from "@/constants/constants";
+import SideScroll from "./Layout/SideScroll";
+import Socials from "./Layout/Socials";
 
 export default function Hero() {
   return (
-    <div className="flex lg:flex-row flex-col-reverse h-">
-      <div className="lg:w-1/2 px-6 py-10 se:px-10 se:py-20 md:px-20 md:py-40">
+    <div className="flex lg:flex-row flex-col-reverse w-full">
+      <div className="lg:w-1/2 px-6 py-10 se:px-10 se:py-20 md:px-32 md:py-40 md:pt-60">
         <div>
           <Image
             class="lxr-hero-title"
             src="/luxuri-logo.svg"
             alt=""
-            width={500}
-            height={500}
+            width={450}
+            height={450}
           />
           <h2 class="text-3xl sm:text-5xl md:text-7xl py-6">
             REAL ESTATE FUND
@@ -27,7 +29,7 @@ export default function Hero() {
           visualParts={[
             {
               percentage: "100%",
-              color: "#E49E34",
+              color: "#BF7500",
             },
           ]}
         />
@@ -38,42 +40,39 @@ export default function Hero() {
           visualParts={[
             {
               percentage: "60%",
-              color: "#E49E34",
+              color: "#BF7500",
             },
           ]}
         />
       </div>
-      <div class="lg:w-1/2 px-4 py-2 se:px-10 se:py-6 md:px-20 md:py-12 flex justify-center items-center">
-          <Image
-            className=""
-            src="/Banner-image11.png"
-            alt=""
-            width={600}
-            height={600}
-          ></Image>
-        {/* <div class="flex justify-center w-fit">
-          <SimpleSlider
-            noOfSlides={1}
-            autoPlay={true}
-            autoPlaySpeed={6000}
-            speed={6000}
-            infinite={true}
-            arrows={true}
-          >
-            {HERO_IMAGES.map((item) => (
-              <div key={item.src}>
+      <div class="lg:w-1/2 px-4 py-2 se:px-10 se:py-6 md:px-20 md:py-12">
+        <SimpleSlider
+          dots={false}
+          noOfSlides={1}
+          autoPlay={true}
+          infinite={true}
+          arrows={false}
+          speed={3000}
+          autoPlaySpeed={7000}
+          lgSlides={1}
+        >
+          {HERO_IMAGES.map((t) => (
+            <div className="relative w-[200px] h-[300px] md:w-[600px] md:h-[600px] flo-img" key={t}>
               <Image
-                class=""
-                src={item.src}
+                src={t.src}
+                className="object-cover rounded-3xl"
+                fill
                 alt=""
-                width={600}
-                height={600}
               ></Image>
-              </div>
-            ))}
-          </SimpleSlider>
-        </div> */}
+            </div>
+          ))}
+        </SimpleSlider>
       </div>
     </div>
+    // <div className="flex justify-between w-[80vw]">
+    //   {/* <Socials></Socials> */}
+
+    //   <SideScroll></SideScroll>
+    // </div>
   );
 }

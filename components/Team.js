@@ -12,6 +12,10 @@ export default function Team() {
         backgroundRepeat: "no-repeat",
       }}
     >
+      {" "}
+      <h3 className="pb-10 se:pb-20 font-italiana text-5xl md:text-7xl mb-3 text-center">
+        Meet the Team
+      </h3>
       <div className="flex lg:flex-row flex-col justify-center">
         <div className="lg:w-2/5 flex justify-center">
           <div className="bg-[#CED3E6] rounded-2xl mb-16 lg:m-0 md:w-3/4 w-fit">
@@ -25,9 +29,6 @@ export default function Team() {
           </div>
         </div>
         <div className="lg:w-3/5">
-          <h3 className="pb-10 se:pb-20 font-italiana text-5xl md:text-7xl mb-3">
-            Meet the Team
-          </h3>
           <h3 className="text-4xl sm:text-6xl font-italiana mb-4">
             JONATHAN CAMPAU
           </h3>
@@ -70,15 +71,15 @@ export default function Team() {
             <div className="rightside02">
               <div className="arrowbutoncover flex">
                 <Image
-                  width={50}
-                  height={50}
+                  width={70}
+                  height={70}
                   className="cursor-pointer"
                   src="/Testi/noun-arrow-down-24249633.svg"
                   alt=""
                 />
                 <Image
-                  width={50}
-                  height={50}
+                  width={70}
+                  height={70}
                   className="cursor-pointer"
                   src="/Testi/noun-arrow-down-24249634.svg"
                   alt=""

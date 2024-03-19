@@ -7,10 +7,10 @@ export default function Partner() {
       <h3 class="pb-10 font-italiana text-3xl se:text-5xl md:text-7xl text-center mb-3">
         Key Partner : LUXURI
       </h3>
-      <div class="flex lg:flex-row flex-col">
-        <div class="lg:w-1/2 pb-10">
+      <div class="flex lg:flex-row flex-col py-6 md:py-10">
+        <div class="lg:w-1/2 pb-10 md:px-10">
           <div className="pb-6">
-            <h6 class="pb-6 text-2xl font-semibold">
+            <h6 class="pb-6 text-xl md:text-2xl font-semibold">
               Luxuri® is the largest luxury residential property management
               company in Florida and Aspen
             </h6>
@@ -24,7 +24,7 @@ export default function Partner() {
             </div>
           </div>
 
-          <h6 class="pb-6 text-2xl font-semibold">
+          <h6 class="pb-6 text-xl md:text-2xl font-semibold">
             Luxuri® is the exclusive provider of South Florida luxury homes for
             Marriott’s Bonvoy home rental program.
           </h6>
@@ -40,9 +40,9 @@ export default function Partner() {
             </div>
           </div>
         </div>
-        <div class="lg:w-1/2">
+        <div class="lg:w-1/2 md:px-10">
           <div class="border-t-2 border-gray-600">
-            <div className="py-2">
+            <div className="py-4">
               <span class="number-gol text-5xl se:text-7xl font-italiana pr-4">$750M</span>
               <p className="text-2xl tracking-widest">
                 PROPERTIES UNDER MANAGEMENT BY LUXURI®
@@ -51,7 +51,7 @@ export default function Partner() {
           </div>
 
           <div class="border-t-2 border-gray-600">
-            <div className="py-2">
+            <div className="py-4">
               <span class="number-gol text-5xl se:text-7xl font-italiana pr-4">$300M</span>
               <p className="text-2xl tracking-widest">
                 TRANSACTIONS BROKERED BY LUXURI®
@@ -60,7 +60,7 @@ export default function Partner() {
           </div>
 
           <div class="border-t-2 border-gray-600">
-            <div className="py-2">
+            <div className="py-4">
               <span class="number-gol text-5xl se:text-7xl font-italiana pr-4">1000+</span>
               <p className="text-2xl tracking-widest">
                 DIRECT TO OWNER BOOKINGACCESS WORLDWIDE

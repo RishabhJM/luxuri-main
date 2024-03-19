@@ -4,7 +4,7 @@ import { CONCIERGE } from "@/constants/constants";
 export default function Concierge() {
   const [services, setServices] = useState(0);
   const [bgImage, setBgImage] = useState("image1.jpg");
-  const buttonStyle = "h-fit rounded-2xl bg-[#d7a55a] text-black items-center font-semibold text-xs se:md py-2 px-4 w-fit cursor-pointer mx-2";
+  const buttonStyle = "h-fit rounded-2xl bg-[#d7a55a] text-black items-center font-semibold text-xs se:md py-2 px-4 w-fit cursor-pointer m-2 hover:bg-[#c57600]";
 
   // const handleChange = (event) => {
   //   console.log(event.target.value);
@@ -12,7 +12,7 @@ export default function Concierge() {
   // };
   return (
     <div
-      className="rounded-3xl md:h-fit bg-cover bg-center flex flex-col justify-between py-10 md:m-10  md:p-10 my-20"
+      className="h-[100vh] bg-cover bg-center flex flex-col justify-between py-10  md:p-10 my-20"
       style={{ backgroundImage: `url(/slider/${bgImage})` }}
     >
       <div className="text-center">
@@ -33,7 +33,7 @@ export default function Concierge() {
           ))}
         </select>
       </div> */}
-      <div className="flex justify-between overflow-x-scroll px-2 no-scrollbar">
+      <div className="flex justify-between sm:flex-wrap overflow-x-scroll px-2 no-scrollbar">
         <button
           className={buttonStyle}
           onClick={() => {

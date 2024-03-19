@@ -38,14 +38,15 @@ const ProgressLine = ({
   return (
     <div className="progress-bar">
       <div className="progressLabel flex justify-between">
-        <span>{label}</span>
+        <span className="text-xs font-semibold">{label}</span>
         <span>{amount}</span>
       </div>
       <div
         className="progressVisualFull"
         // to change the background color dynamically
         style={{
-          backgroundColor
+          backgroundColor,
+          borderRadius: "20px",
         }}
       >
         {visualParts.map((item, index) => {
@@ -60,7 +61,9 @@ const ProgressLine = ({
               style={{
                 width: widths[index],
                 // setting the actual color of bar part
-                backgroundColor: item.color
+                backgroundColor: item.color,
+                borderRadius: "20px",
+                
               }}
               className="progressVisualPart"
             />

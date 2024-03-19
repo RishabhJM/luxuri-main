@@ -59,7 +59,7 @@ export default function AsTable() {
 
   return (
     <div
-      className="my-10 py-10 px-4 md:p-20 mx-auto text-white h-fit   overflow-x-scroll no-scrollbar"
+      className="my-10 py-10 px-4 md:p-20 mx-auto text-white h-fit  overflow-x-scroll no-scrollbar"
       style={{
         backgroundImage: `url(/pexels-photo-113537855.jpg)`,
         backgroundSize: "cover",
@@ -70,7 +70,7 @@ export default function AsTable() {
       <h3 class="md:text-center text-3xl se:text-5xl md:text-7xl font-italiana mb-10 ">
         DUE DILIGENCED PROPERTIES: ASPEN
       </h3>
-      <div className="md:px-20">
+      <div className="md:px-10 lg:px-20">
         <div className="flex justify-between mb-2">
           <div className="w-full flex items-center gap-1">
             <svg
@@ -140,7 +140,7 @@ export default function AsTable() {
           </tbody>
         </table>
         {/* pagination */}
-        <div className="flex items-center justify-end mt-2 gap-2">
+        <div className="flex items-center md:justify-end mt-2 gap-2">
           <button
             onClick={() => {
               table.previousPage();

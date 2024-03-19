@@ -20,7 +20,7 @@ export default function CompAdv() {
         LUXURI : COMPETITIVE ADVANTAGE
       </h3>
       <div className="lg:mx-20">
-        <div className="flex lg:flex-row flex-col">
+        <div className="flex lg:flex-row flex-col justify-between">
           <div className={boxStyle}>
             <div className={imgStyle}>
               <Image
@@ -61,7 +61,7 @@ export default function CompAdv() {
             </p>
           </div>
         </div>
-        <div className="flex lg:flex-row flex-col">
+        <div className="flex lg:flex-row flex-col justify-between">
           <div className={boxStyle}>
             <div className={imgStyle}>
               <Image width={50} height={50} src="/Group-4.svg" alt="" />
