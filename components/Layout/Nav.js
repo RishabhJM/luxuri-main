@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Nav() {
   const [openNav, setOpenNav] = useState(false);
   return (
-    <div className="flex lg:flex-row flex-col justify-between py-6 px-10 bg-opacity-0 text-white">
+    <div className="flex lg:flex-row flex-col justify-between py-4 px-10 bg-opacity-0 text-white">
       <div className="lg:w-fit w-auto flex justify-between items-center">
         <div className="items-center">
           <Image src="/luxuri-logo.svg" width={150} height={150}></Image>
@@ -58,22 +58,25 @@ export default function Nav() {
         <div className="lg:hidden w-auto flex justify-center text-center">
           <nav className="flex flex-col">
             {NAV_LINKS.map((item) => (
-              <Link href={item.href} key={item.key} className="p-4" onClick={() => setOpenNav(!openNav)}>
+              <Link
+                href={item.href}
+                key={item.key}
+                className="p-4"
+                onClick={() => setOpenNav(!openNav)}
+              >
                 {item.label}
               </Link>
             ))}
           </nav>
         </div>
       )}
-      <div className="flex lg:text-xl">
-        <nav className="hidden lg:flex justify-end">
-          {NAV_LINKS.map((item) => (
-            <Link href={item.href} key={item.key} className="p-4">
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-      </div>
+      <nav className="w-1/2 hidden lg:flex justify-between text-md">
+        {NAV_LINKS.map((item) => (
+          <Link href={item.href} key={item.key} className="p-4">
+            {item.label}
+          </Link>
+        ))}
+      </nav>
       <div>
         <Image
           className="hidden lg:block"

@@ -2,9 +2,9 @@ import Image from "next/image";
 import React from "react";
 
 export default function Map() {
-  const colBtn = "mt-[10px] mr-[20px] se:text-lg text-xs"
+  const colBtn = "mt-[10px] mr-[20px] se:text-lg text-xs";
   return (
-    <div className="m-2 se:m-10 h-fit flex lg:flex-row flex-col items-center">
+    <div className="p-10 h-fit flex lg:flex-row flex-col items-center">
       <div className="lg:w-2/5 px-4 md:px-20">
         <Image
           width={400}
@@ -25,7 +25,15 @@ export default function Map() {
         </div>
       </div>
       <div className="lg:w-3/5">
-        <div className="flo-img3 t-cen">
+        <div
+          className="flo-img3 t-cen"
+          style={{
+            backgroundImage: `url(/Clippathgroup.svg)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
           <Image width={900} height={900} src="/MAP.svg" alt="" />
         </div>
         <div className="">

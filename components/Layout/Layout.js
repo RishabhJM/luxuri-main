@@ -9,9 +9,9 @@ export default function Layout({ children }) {
       {/* <ProgressBar color1="gray" color2="gold" height="4px" position="fixed" /> */}
       <Nav></Nav>
       <div className="flex justify-between">
-        <Socials></Socials>
+        {/* <Socials></Socials> */}
         {children}
-        <SideScroll></SideScroll>
+        {/* <SideScroll></SideScroll> */}
       </div>
       <Footer></Footer>
     </div>

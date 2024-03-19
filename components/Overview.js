@@ -4,10 +4,10 @@ import Image from "next/image";
 
 export default function Overview() {
   return (
-    <div className="my-20 h-fit">
+    <div className="my-20 h-fit sm:px-20">
       <div className="text-center">
         <h3 class=" text-4xl sm:text-5xl pb-10">OVERVIEW</h3>
-        <p class="pb-32">
+        <p class="pb-32 text-gray-300">
           A private equity fund established to capitalize on realestate
           investment opportunities and the lack of supply inhigh-end Short-Term
           Rental (STR) markets. The strategy is to purchase, renovate, rent, and
@@ -16,7 +16,7 @@ export default function Overview() {
         </p>
       </div>
       <div className="flex lg:flex-row flex-col justify-center">
-        <div className="flex md:flex-row flex-col justify-center">
+        <div className="flex md:flex-row flex-col justify-center items-center">
           <Image
             height={500}
             width={300}
@@ -32,7 +32,7 @@ export default function Overview() {
             alt=""
           />
         </div>
-        <div className="flex md:flex-row flex-col justify-center">
+        <div className="flex md:flex-row flex-col justify-center items-center">
           <Image
             height={500}
             width={300}

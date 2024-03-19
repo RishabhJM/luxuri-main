@@ -3,11 +3,16 @@ import React from "react";
 
 export default function Team() {
   return (
-    <div className="h-fit m-2 se:m-10 py-20">
-      <h3 className="pb-10 se:pb-20 font-italiana text-5xl md:text-7xl text-center mb-3">
-        Meet the Team
-      </h3>
-      <div className="flex lg:flex-row flex-col">
+    <div
+      className="h-fit px-10 py-20"
+      style={{
+        backgroundImage: `url(/background-34.jpg)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div className="flex lg:flex-row flex-col justify-center">
         <div className="lg:w-2/5 flex justify-center">
           <div className="bg-[#CED3E6] rounded-2xl mb-16 lg:m-0 md:w-3/4 w-fit">
             <Image
@@ -20,8 +25,15 @@ export default function Team() {
           </div>
         </div>
         <div className="lg:w-3/5">
-          <h3 className="text-4xl sm:text-6xl font-italiana mb-4">JONATHAN CAMPAU</h3>
-          <span className="text-[#fad49c] font-semibold text-xl sm:text-3xl">OWNER / OPERATOR</span>
+          <h3 className="pb-10 se:pb-20 font-italiana text-5xl md:text-7xl mb-3">
+            Meet the Team
+          </h3>
+          <h3 className="text-4xl sm:text-6xl font-italiana mb-4">
+            JONATHAN CAMPAU
+          </h3>
+          <span className="text-[#fad49c] font-semibold text-xl sm:text-3xl">
+            OWNER / OPERATOR
+          </span>
           <p className="text-md sm:text-lg py-4">
             Jonathan Campau is an entrepreneur, real estate investor,customer
             service expert, founder and CEO of Luxuri®. Campaubegan his

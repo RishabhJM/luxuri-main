@@ -13,8 +13,11 @@ import Partner from "@/components/Partner";
 import Process from "@/components/Process";
 import SFTable from "@/components/SFTable";
 import Team from "@/components/Team";
+import { useState } from "react";
 
 export default function Home() {
+  const [lock,setLock] = useState(true);
+  const [password, setPassword] = useState("");
   return (
     <Layout>
       <div className="w-full overflow-y-auto overflow-x-hidden h-screen no-scrollbar">
@@ -31,7 +34,6 @@ export default function Home() {
         <SFTable></SFTable>
         <AsTable></AsTable>
         <Booking></Booking>
-        {/* <Chef></Chef> */}
         <div id="concierge"><Concierge></Concierge></div>
       </div>
     </Layout>

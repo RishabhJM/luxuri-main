@@ -58,7 +58,15 @@ export default function AsTable() {
   });
 
   return (
-    <div className="m-2 py-20 se:m-10 mx-auto text-white h-fit w-[80vw]  overflow-x-scroll no-scrollbar">
+    <div
+      className="my-10 py-10 px-4 md:p-20 mx-auto text-white h-fit   overflow-x-scroll no-scrollbar"
+      style={{
+        backgroundImage: `url(/pexels-photo-113537855.jpg)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <h3 class="md:text-center text-3xl se:text-5xl md:text-7xl font-italiana mb-10 ">
         DUE DILIGENCED PROPERTIES: ASPEN
       </h3>
@@ -115,7 +123,7 @@ export default function AsTable() {
                   className="bg-black bg-opacity-0 border-b-2"
                 >
                   {row.getVisibleCells().map((cell) => (
-                    <td key={cell.id} className="px-4 py-4">
+                    <td key={cell.id} className="px-4 py-4 bg-black opacity-75">
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()

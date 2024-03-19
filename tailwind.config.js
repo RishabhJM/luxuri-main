@@ -21,6 +21,8 @@ module.exports = {
         'luxuri-golden':"#E49E34",
       },screens: {
         'se': '440px',
+        'xlg':'1440px',
+        'xsm':'320px',
       },
     },
   },

@@ -3,8 +3,16 @@ import React from "react";
 
 export default function Education() {
   return (
-    <div class="m-2 se:m-10 h-fit flex lg:flex-row flex-col-reverse">
-      <div class="lg:w-1/2 py-4 se:px-10 se:py-6 md:px-20 md:py-10">
+    <div
+      class="p-10 h-fit flex lg:flex-row flex-col-reverse"
+      style={{
+        backgroundImage: `url(/Frame-91.svg)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <div class="lg:w-1/2 py-4 se:px-10 se:py-6 md:px-20 md:py-10 flex flex-col justify-center">
         <h5 class="pb-10 text-xl se:text-3xl font-semibold">
           Strong Luxury Property Markets in South Florida and Aspen
         </h5>
@@ -42,7 +50,7 @@ export default function Education() {
           </ul>
         </div>
       </div>
-      <div className="lg:w-1/2 flex justify-center">
+      <div className="lg:w-1/2 flex flex-col justify-center">
         <div className="flo-img">
           <Image width={800} height={800} src="/asset90.png" alt="" />
         </div>

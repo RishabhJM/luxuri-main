@@ -2,20 +2,33 @@ import Image from "next/image";
 import React from "react";
 
 export default function CompAdv() {
-    const boxStyle = "border-white border-2 rounded-2xl p-4 md:p-8 lg:w-1/3 m-2";
-    const boxHeading = "text-xl font-bold text-center pb-4";
-    const boxText = "text-sm text-center";
-    const imgStyle = "flex justify-center pb-4";
+  const boxStyle = "border-white border-2 rounded-2xl p-4 md:p-8 lg:w-1/3 m-2";
+  const boxHeading = "text-xl font-bold text-center pb-4";
+  const boxText = "text-sm text-center";
+  const imgStyle = "flex justify-center pb-4";
   return (
-    <div className="h-fit md:m-10 py-20">
-      <h3 className="pb-20 font-italiana text-3xl se:text-5xl md:text-7xl text-center mb-3">
+    <div
+      className="h-fit p-10 md:py-20 md:px-44"
+      style={{
+        backgroundImage: `url(/path378.svg)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
+      <h3 className="pb-20 font-italiana text-3xl se:text-5xl text-center mb-3">
         LUXURI : COMPETITIVE ADVANTAGE
       </h3>
       <div className="lg:mx-20">
         <div className="flex lg:flex-row flex-col">
           <div className={boxStyle}>
             <div className={imgStyle}>
-              <Image width={50} height={50} src="/noun-experience-63014821.svg" alt="" />
+              <Image
+                width={50}
+                height={50}
+                src="/noun-experience-63014821.svg"
+                alt=""
+              />
             </div>
             <h5 className={boxHeading}>EXPERIENCED TEAM</h5>
             <p className={boxText}>
@@ -29,7 +42,7 @@ export default function CompAdv() {
             <div className={imgStyle}>
               <Image width={50} height={50} src="/Group-2.svg" alt="" />
             </div>
-            <h5  className={boxHeading}>MARKET ANALYSIS</h5>
+            <h5 className={boxHeading}>MARKET ANALYSIS</h5>
             <p className={boxText}>
               We have a dedicated team focused on optimizing ADRs based upon
               seasonality,location and availability. This allowsus to maximize
@@ -67,8 +80,8 @@ export default function CompAdv() {
             </div>
             <h5 className={boxHeading}>GUEST EXPERIENCE</h5>
             <p className={boxText}>
-              To ensure a world className experience for our guests, we offer 24/7
-              concierge service from booking to check out. This isn’t about
+              To ensure a world className experience for our guests, we offer
+              24/7 concierge service from booking to check out. This isn’t about
               communications, it is really about customer experience.
             </p>
           </div>

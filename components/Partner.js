@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Partner() {
   return (
-    <div class="h-fit m-2 se:m-10">
+    <div class="h-fit p-10 md:p-20">
       <h3 class="pb-10 font-italiana text-3xl se:text-5xl md:text-7xl text-center mb-3">
         Key Partner : LUXURI
       </h3>
@@ -43,7 +43,7 @@ export default function Partner() {
         <div class="lg:w-1/2">
           <div class="border-t-2 border-gray-600">
             <div className="py-2">
-              <span class="number-gol font-italiana pr-4">$750M</span>
+              <span class="number-gol text-5xl se:text-7xl font-italiana pr-4">$750M</span>
               <p className="text-2xl tracking-widest">
                 PROPERTIES UNDER MANAGEMENT BY LUXURI®
               </p>
@@ -52,7 +52,7 @@ export default function Partner() {
 
           <div class="border-t-2 border-gray-600">
             <div className="py-2">
-              <span class="number-gol font-italiana pr-4">$300M</span>
+              <span class="number-gol text-5xl se:text-7xl font-italiana pr-4">$300M</span>
               <p className="text-2xl tracking-widest">
                 TRANSACTIONS BROKERED BY LUXURI®
               </p>
@@ -61,7 +61,7 @@ export default function Partner() {
 
           <div class="border-t-2 border-gray-600">
             <div className="py-2">
-              <span class="number-gol font-italiana pr-4">1000+</span>
+              <span class="number-gol text-5xl se:text-7xl font-italiana pr-4">1000+</span>
               <p className="text-2xl tracking-widest">
                 DIRECT TO OWNER BOOKINGACCESS WORLDWIDE
               </p>

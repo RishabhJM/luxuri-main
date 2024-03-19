@@ -6,7 +6,7 @@ import { HERO_IMAGES } from "@/constants/constants";
 
 export default function Hero() {
   return (
-    <div className="flex lg:flex-row flex-col-reverse h-fit">
+    <div className="flex lg:flex-row flex-col-reverse h-">
       <div className="lg:w-1/2 px-6 py-10 se:px-10 se:py-20 md:px-20 md:py-40">
         <div>
           <Image
