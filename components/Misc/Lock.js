@@ -56,7 +56,7 @@ const Lock = ({ onUnlock }) => {
               class="hover:bg-[#ddd] bg-white text-black rounded-full p-4 font-medium text-lg border-2 border-black leading-normal relative right-12 text-center w-[120px]" 
               type="submit"
             >
-              Let's go
+              Let&apos;s go
             </button>
           </div>
 
