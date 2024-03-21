@@ -14,15 +14,15 @@ export default function Layout({ children }) {
   };
   return (
     <div>
-      {/* {!authenticated && <Lock onUnlock={handleUnlock} />}
-      {authenticated && ( */}
+      {!authenticated && <Lock onUnlock={handleUnlock} />}
+      {authenticated && (
         <>
           <Nav></Nav>
           {children}
-          {/* <Modal/> */}
+          <Modal />
           <Footer></Footer>
         </>
-      {/* )} */}
+      )}
     </div>
   );
 }

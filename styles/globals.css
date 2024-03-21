@@ -225,78 +225,99 @@ body {
   padding: 0 10px;
 }
 
-.modal-wrapper {
-  width: 500px;
-  height: 600px;
+.modalContainer {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  
 }
 
-.modal {
-  color: #000;
-  background: white;
-  height:100%;
-  width:100%;
-  border-radius: 15px;
-  padding: 15px;
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
 }
 
-.modal-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.modalContainer .body {
+  flex: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.modal-body {
-  padding-top: 10px;
-  overflow-y:scroll;
-}
-
-.modal-header {
-  display: flex;
-  justify-content: flex-end;
-  font-size: 25px;
-}
-
-/* .heading-word {
-  position: relative;
-  margin-top: -180px;
-  color: #fff;
+  font-size: 1.7rem;
   text-align: center;
-  font-family: Raleway;
-  font-size: 61.225px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }
-.heading-word span {
-  color: #898989;
-  font-family: Raleway;
-  font-size: 61.225px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-} */
 
-/* .letsgobtn {
-  color: #000;
-  font-family: Raleway;
-  font-size: 17px;
+
+
+
+
+
+.forgot-row1 {
+  color: #696969;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
-  background: white;
-  border-radius: 40px;
-  padding: 24px 40px;
-  position: absolute;
-  margin-left: 17%;
-  cursor: pointer;
+  padding: 0 10px;
 }
-.letsgobtn:hover,
-.letsgobtn:focus {
-  background-color: #ddd;
-} */
+.forgot-row2 {
+  color: #e1e1e1;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  padding: 0 10px;
+}
+.forgot-row {
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+.styled-checkbox {
+  --normal-bg: #eee;
+  --hover-bg: #ddd;
+  --active-bg: #007bff;
+}
+.text-danger {
+  font-size: 11px;
+}
+.styled-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #9f9f9f;
+}
+.styled-checkbox label:before {
+  content: "";
+  background-color: var(--normal-bg);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 50 50' width='50px' height='50px' fill='white'><path d='M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z' /></svg>");
+  background-size: 1000%;
+  background-position: center;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+.styled-checkbox label:hover:before {
+  background-color: var(--hover-bg);
+}
+.styled-checkbox label:active:before {
+  transform: scale(0.9);
+}
+.styled-checkbox input {
+  display: none;
+}
+.styled-checkbox input:checked + label:before {
+  background-color: #8b8b8b;
+  background-size: 90%;
+}
