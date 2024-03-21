@@ -142,7 +142,7 @@ function Modal({ setOpenModal, setCheck }) {
           <p className="py-2">
             7. Term. This Agreement will continue in effect until terminated by
             either Party upon written notice. In the event of termination of
-            this Agreement, the Receiving Party’s non - disclosure obligations
+            this Agreement, the Receiving Party&apos;s non - disclosure obligations
             as set forth herein shall continue for five(5) years from the date
             of termination, except with regard to trade secrets of the
             Disclosing Party, which shall be held in confidence for as long as
