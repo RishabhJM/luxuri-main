@@ -58,7 +58,7 @@ export default function SFTable() {
 
   return (
     <div
-      className="py-10 px-4 md:p-20 mx-auto text-white h-fit overflow-x-scroll no-scrollbar"
+      className=" px-4 md:p-20 mx-auto text-white h-fit overflow-x-scroll no-scrollbar"
       style={{
         backgroundImage: `url(/pexels-photo-11357855-comp.jpg)`,
         backgroundSize: "cover",

@@ -59,7 +59,7 @@ export default function AsTable() {
 
   return (
     <div
-      className="my-10 py-10 px-4 md:p-20 mx-auto text-white h-fit  overflow-x-scroll no-scrollbar"
+      className=" py-10 px-4 md:p-20 mx-auto text-white h-fit  overflow-x-scroll no-scrollbar"
       style={{
         backgroundImage: `url(/pexels-photo-113537855.jpg)`,
         backgroundSize: "cover",

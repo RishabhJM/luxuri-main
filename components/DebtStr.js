@@ -2,12 +2,12 @@ import Image from "next/image";
 import React from "react";
 
 export default function DebtStr() {
-  const tableStyle = "px-4 py-6 md:py-10 se:px-10 md:px-20 flex border-style";
+  const tableStyle = "py-6 py-6  flex border-style";
   const rowKey = "text-h4 w-2/5 text-sm se:text-md";
   const rowVal = "text-p4 w-3/5 text-sm se:text-md";
   return (
     <div
-      className="h-fit sm:px-20 py-20 flex lg:flex-row flex-col"
+      className="h-fit py-20 flex lg:flex-row flex-col"
       style={{
         backgroundImage: `url(/Clippathgroup.svg)`,
         backgroundSize: "cover",
@@ -15,7 +15,7 @@ export default function DebtStr() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="lg:w-1/2 se:text-sm px-2 py-4 se:px-6 se:py-6 md:px-10 md:py-10">
+      <div className="lg:w-1/2 se:text-sm px-4 py-4 se:px-10 se:py-6 md:px-20 md:py-10">
         <h4 className="text-xl se:text-3xl pb-10 md:pb-10 font-semibold">
           DEBT STRUCTURE (FUND I)
         </h4>
@@ -42,7 +42,7 @@ export default function DebtStr() {
           </div>
         </div>
       </div>
-      <div className="lg:w-1/2 px-2 py-4 se:px-6 se:py-6 md:px-10 md:py-10">
+      <div className="lg:w-1/2 px-4 py-4 se:px-10 se:py-6 md:px-20 md:py-10">
         <div>
           <h4 className="pb-4 text-xl se:text-3xl font-semibold">
             PRELIMINARY RETURN PROJECTIONS

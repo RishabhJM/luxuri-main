@@ -20,8 +20,8 @@ export default function Team() {
         <div className="lg:w-2/5 flex justify-center">
           <div className="bg-[#CED3E6] rounded-2xl mb-16 lg:m-0 md:w-3/4 w-fit">
             <Image
-              width={1000}
-              height={1000}
+              width={2000}
+              height={2000}
               className="relative"
               src="/Testi/Group60.png"
               alt=""

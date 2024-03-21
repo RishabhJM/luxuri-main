@@ -9,7 +9,7 @@ export default function Nav() {
   const router = useRouter();
   const isActive = (href) => router.pathname.includes(href);
   return (
-    <div className="flex lg:flex-row flex-col justify-between py-4 px-10 bg-opacity-0 text-white">
+    <div className="flex lg:flex-row flex-col justify-between py-4 px-10 bg-black bg-opacity-0 text-white">
       <div className="lg:w-fit w-auto flex justify-between items-center">
         <div className="items-center">
           <Image src="/luxuri-logo.svg" width={150} height={150}></Image>

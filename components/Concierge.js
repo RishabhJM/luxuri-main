@@ -12,7 +12,7 @@ export default function Concierge() {
   // };
   return (
     <div
-      className="h-[100vh] bg-cover bg-center flex flex-col justify-between py-10  md:p-10 my-20"
+      className="h-[100vh] bg-cover bg-center flex flex-col justify-between py-10  md:p-10 "
       style={{ backgroundImage: `url(/slider/${bgImage})` }}
     >
       <div className="text-center">
