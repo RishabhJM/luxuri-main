@@ -38,7 +38,7 @@ export default function Map() {
             <Image fill src="/MAP.svg" alt="" />
           </div>
         </div>
-        <div className="">
+        <div className="px-4">
           <div className="flex overflow-x-scroll px-2 no-scrollbar sm:flex-wrap mb-4">
             <div className={colBtn}>
               <button className="btn-style-1">LONDON</button>

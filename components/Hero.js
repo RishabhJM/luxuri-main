@@ -11,7 +11,7 @@ export default function Hero() {
     <div className="flex lg:flex-row flex-col-reverse w-full">
       <div className="lg:w-1/2 px-6 py-10 se:px-10 se:py-20 md:px-32 md:py-40 md:pt-60">
         <div className="flex flex-col items-center lg:items-start">
-          <div className="relative w-[250px] h-[30px] md:w-[450px] md:h-[100px]">
+          <div className="relative w-[250px] h-[30px] md:w-[350px] md:h-[100px]">
             <Image
               class="lxr-hero-title"
               src="/luxuri-logo.svg"
@@ -20,8 +20,8 @@ export default function Hero() {
             />
           </div>
 
-          <h2 class="text-2xl sm:text-4xl md:text-7xl py-6">
-            REAL ESTATE FUND
+          <h2 class="text-2xl sm:text-4xl md:text-7xl py-">
+            Real Estate Fund
           </h2>
         </div>
         <ProgressLine

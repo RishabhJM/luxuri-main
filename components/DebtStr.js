@@ -15,7 +15,7 @@ export default function DebtStr() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="lg:w-1/2 se:text-sm px-4 py-4 se:px-10 se:py-6 md:px-20 md:py-10">
+      <div className="lg:w-1/3 se:text-sm px-4 py-4 se:px-10 se:py-6 md:px-20 md:py-10">
         <h4 className="text-xl se:text-3xl pb-10 md:pb-10 font-semibold">
           DEBT STRUCTURE (FUND I)
         </h4>
@@ -42,7 +42,7 @@ export default function DebtStr() {
           </div>
         </div>
       </div>
-      <div className="lg:w-1/2 px-4 py-4 se:px-10 se:py-6 md:px-20 md:py-10">
+      <div className="lg:w-2/3 px-4 py-4 se:px-10 se:py-6 md:px-20 md:py-10">
         <div>
           <h4 className="pb-4 text-xl se:text-3xl font-semibold">
             PRELIMINARY RETURN PROJECTIONS
