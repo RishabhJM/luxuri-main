@@ -24,7 +24,7 @@ export default function Map() {
           </p>
         </div>
       </div>
-      <div className="lg:w-3/5">
+      <div className="w-screen lg:w-3/5">
         <div
           className="flo-img3 t-cen"
           style={{
@@ -34,10 +34,12 @@ export default function Map() {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <Image width={900} height={900} src="/MAP.svg" alt="" />
+          <div className="relative w-screen h-[200px] sm:w-full sm:h-[500px]">
+            <Image fill src="/MAP.svg" alt="" />
+          </div>
         </div>
         <div className="">
-          <div className="flex flex-wrap mb-4">
+          <div className="flex overflow-x-scroll px-2 no-scrollbar sm:flex-wrap mb-4">
             <div className={colBtn}>
               <button className="btn-style-1">LONDON</button>
             </div>

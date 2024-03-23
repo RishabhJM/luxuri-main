@@ -6,7 +6,7 @@ export default function Education() {
     <div
       class="p-10 h-fit flex lg:flex-row flex-col-reverse"
       style={{
-        backgroundImage: `url(/Frame-91.svg)`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/Frame-91.svg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

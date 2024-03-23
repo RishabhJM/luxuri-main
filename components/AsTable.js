@@ -59,15 +59,15 @@ export default function AsTable() {
 
   return (
     <div
-      className=" py-10 px-4 md:p-20 mx-auto text-white h-fit  overflow-x-scroll no-scrollbar"
+      className=" py-10 px-4 md:p-20 mx-auto text-white h-fit  overflow-x-scroll no-scrollbar bg-gradient-to-b"
       style={{
-        backgroundImage: `url(/pexels-photo-113537855.jpg)`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/pexels-photo-113537855.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
     >
-      <h3 class="md:text-center text-3xl se:text-5xl md:text-7xl font-italiana mb-10 ">
+      <h3 class="md:text-center text-3xl se:text-5xl font-italiana mb-10 ">
         DUE DILIGENCED PROPERTIES: ASPEN
       </h3>
       <div className="md:px-10 lg:px-20">

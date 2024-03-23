@@ -4,7 +4,7 @@ import { CONCIERGE } from "@/constants/constants";
 export default function Concierge() {
   const [services, setServices] = useState(0);
   const [bgImage, setBgImage] = useState("image1.jpg");
-  const buttonStyle = "h-fit rounded-2xl bg-[#d7a55a] text-black items-center font-semibold text-xs se:md py-2 px-4 w-fit cursor-pointer m-2 hover:bg-[#c57600]";
+  const buttonStyle = "h-fit rounded-2xl bg-[#d7a55a] text-black items-center font-semibold text-xs se:md py-2 px-4 w-fit cursor-pointer m-2 hover:bg-[#c57600] whitespace-nowrap";
 
   // const handleChange = (event) => {
   //   console.log(event.target.value);
@@ -13,7 +13,7 @@ export default function Concierge() {
   return (
     <div
       className="h-[100vh] bg-cover bg-center flex flex-col justify-between py-10  md:p-10 "
-      style={{ backgroundImage: `url(/slider/${bgImage})` }}
+      style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/slider/${bgImage})` }}
     >
       <div className="text-center">
         <h3 className="text-3xl se:text-5xl md:text-7xl font-italiana mb-4">

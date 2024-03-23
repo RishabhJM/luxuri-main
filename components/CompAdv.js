@@ -10,7 +10,7 @@ export default function CompAdv() {
     <div
       className="h-fit p-10 md:py-20 md:px-44"
       style={{
-        backgroundImage: `url(/path378.svg)`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/path378.svg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

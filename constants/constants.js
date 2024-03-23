@@ -145,6 +145,33 @@ export const CONCIERGE = [
 ];
 
 export const HERO_IMAGES = [
-  {src:"/Banner-image11.png"},
-  {src:"/Banner-image22.png"},
-]
+  { src: "/Banner-image11.png" },
+  { src: "/Banner-image22.png" },
+];
+
+export const TEAM_DATA = [
+  {
+    name: "JONATHAN CAMPAU",
+    desg: "OWNER / OPERATOR",
+    info: "Jonathan Campau is an entrepreneur, real estate investor,customer service expert, founder and CEO of Luxuri®. Campaubegan his hospitality training during his undergraduateprogram in South Florida, by learning from the best: The HardRock Hotels and casinos. Post graduation, he moved to KansasCity where he worked for a hedge fund as a new businessanalyst while completing an MBA in Corporate Finance.",
+    src: "/Testi/Group60.png",
+  },
+  {
+    name: "Harry Kane",
+    desg: "CEO",
+    info: "Jonathan Campau is an entrepreneur, real estate investor,customer service expert, founder and CEO of Luxuri®. Campaubegan his hospitality training during his undergraduateprogram in South Florida, by learning from the best: The HardRock Hotels and casinos. Post graduation, he moved to KansasCity where he worked for a hedge fund as a new businessanalyst while completing an MBA in Corporate Finance.",
+    src: "/Testi/Group60.png",
+  },
+  {
+    name: "George Smith",
+    desg: "CTO",
+    info: "Jonathan Campau is an entrepreneur, real estate investor,customer service expert, founder and CEO of Luxuri®. Campaubegan his hospitality training during his undergraduateprogram in South Florida, by learning from the best: The HardRock Hotels and casinos. Post graduation, he moved to KansasCity where he worked for a hedge fund as a new businessanalyst while completing an MBA in Corporate Finance.",
+    src: "/Testi/Group60.png",
+  },
+  {
+    name: "Steven Maguire",
+    desg: "CFO",
+    info: "Jonathan Campau is an entrepreneur, real estate investor,customer service expert, founder and CEO of Luxuri®. Campaubegan his hospitality training during his undergraduateprogram in South Florida, by learning from the best: The HardRock Hotels and casinos. Post graduation, he moved to KansasCity where he worked for a hedge fund as a new businessanalyst while completing an MBA in Corporate Finance.",
+    src: "/Testi/Group60.png",
+  },
+];

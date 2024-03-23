@@ -58,9 +58,9 @@ export default function SFTable() {
 
   return (
     <div
-      className=" px-4 md:p-20 mx-auto text-white h-fit overflow-x-scroll no-scrollbar"
+      className=" py-10 px-4 md:p-20 mx-auto text-white h-fit overflow-x-scroll no-scrollbar"
       style={{
-        backgroundImage: `url(/pexels-photo-11357855-comp.jpg)`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/pexels-photo-11357855-comp.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",

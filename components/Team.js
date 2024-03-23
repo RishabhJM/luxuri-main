@@ -1,12 +1,24 @@
+import { TEAM_DATA } from "@/constants/constants";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 export default function Team() {
+  const [person, setPerson] = useState(0);
+  function nextPerson() {
+    if (person < TEAM_DATA.length-1) {
+      setPerson(person + 1);
+    }
+  }
+  function prevPerson() {
+    if (person > 0) {
+      setPerson(person - 1);
+    }
+  }
   return (
     <div
       className="h-fit px-10 py-20"
       style={{
-        backgroundImage: `url(/background-34.jpg)`,
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/background-34.jpg)`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -23,27 +35,19 @@ export default function Team() {
               width={2000}
               height={2000}
               className="relative"
-              src="/Testi/Group60.png"
+              src={TEAM_DATA[person].src}
               alt=""
             />
           </div>
         </div>
         <div className="lg:w-3/5">
           <h3 className="text-4xl sm:text-6xl font-italiana mb-4">
-            JONATHAN CAMPAU
+            {TEAM_DATA[person].name}
           </h3>
           <span className="text-[#fad49c] font-semibold text-xl sm:text-3xl">
-            OWNER / OPERATOR
+            {TEAM_DATA[person].desg}
           </span>
-          <p className="text-md sm:text-lg py-4">
-            Jonathan Campau is an entrepreneur, real estate investor,customer
-            service expert, founder and CEO of Luxuri®. Campaubegan his
-            hospitality training during his undergraduateprogram in South
-            Florida, by learning from the best: The HardRock Hotels and casinos.
-            Post graduation, he moved to KansasCity where he worked for a hedge
-            fund as a new businessanalyst while completing an MBA in Corporate
-            Finance.
-          </p>
+          <p className="text-md sm:text-lg py-4">{TEAM_DATA[person].info}</p>
           <div className="flex sm:flex-row flex-col justify-between items-center">
             <div className="flex mb-10">
               <Image
@@ -52,6 +56,9 @@ export default function Team() {
                 className="rounded-full mr-6 f4roundimg2"
                 src="/Rectangle-52.png"
                 alt=""
+                onClick={() => {
+                  setPerson(1);
+                }}
               />
               <Image
                 width={100}
@@ -59,6 +66,9 @@ export default function Team() {
                 className="rounded-full mr-6 f4roundimg2"
                 src="/Rectangle-53.jpg"
                 alt=""
+                onClick={() => {
+                  setPerson(2);
+                }}
               />
               <Image
                 width={100}
@@ -66,6 +76,9 @@ export default function Team() {
                 className="rounded-full mr-6 f4roundimg2"
                 src="/Rectangle-54.jpg"
                 alt=""
+                onClick={() => {
+                  setPerson(3);
+                }}
               />
             </div>
             <div className="rightside02">
@@ -76,6 +89,7 @@ export default function Team() {
                   className="cursor-pointer"
                   src="/Testi/noun-arrow-down-24249633.svg"
                   alt=""
+                  onClick={() => {prevPerson()}}
                 />
                 <Image
                   width={70}
@@ -83,6 +97,7 @@ export default function Team() {
                   className="cursor-pointer"
                   src="/Testi/noun-arrow-down-24249634.svg"
                   alt=""
+                  onClick={() => {nextPerson()}}
                 />
               </div>
             </div>

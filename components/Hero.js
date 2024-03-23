@@ -10,15 +10,17 @@ export default function Hero() {
   return (
     <div className="flex lg:flex-row flex-col-reverse w-full">
       <div className="lg:w-1/2 px-6 py-10 se:px-10 se:py-20 md:px-32 md:py-40 md:pt-60">
-        <div>
-          <Image
-            class="lxr-hero-title"
-            src="/luxuri-logo.svg"
-            alt=""
-            width={450}
-            height={450}
-          />
-          <h2 class="text-3xl sm:text-5xl md:text-7xl py-6">
+        <div className="flex flex-col items-center lg:items-start">
+          <div className="relative w-[250px] h-[30px] md:w-[450px] md:h-[100px]">
+            <Image
+              class="lxr-hero-title"
+              src="/luxuri-logo.svg"
+              alt=""
+              fill
+            />
+          </div>
+
+          <h2 class="text-2xl sm:text-4xl md:text-7xl py-6">
             REAL ESTATE FUND
           </h2>
         </div>
@@ -57,7 +59,10 @@ export default function Hero() {
           lgSlides={1}
         >
           {HERO_IMAGES.map((t) => (
-            <div className="relative w-[200px] h-[300px] md:w-[600px] md:h-[600px] flo-img" key={t}>
+            <div
+              className="relative w-[200px] h-[300px] md:w-[600px] md:h-[600px] flo-img"
+              key={t}
+            >
               <Image
                 src={t.src}
                 className="object-cover rounded-3xl"
