@@ -5,34 +5,25 @@ import React from "react";
 export default function Socials() {
   return (
     <div class="mx-6 flex flex-col items-center">
-      <div className="border-l-[3px] border-[#A7A098] leading-[0.1em] h-[25vh] mt-[10px] mb-[20px]"></div>
-      <div className="flex h-[25vh] flex-col items-center justify-center">
+      <div className="border-l-[3px] border-[#A7A098] leading-[0.1em] h-[90vh] my-8"></div>
+      <div className="flex bg-black flex-col items-center justify-between absolute left-4 top-[40vh]">
         <Link href="https://www.facebook.com/luxurirentals">
-          <Image
-            src="/facebook.png"
-            width={36}
-            height={36}
-            className="py-6"
-          ></Image>
+          <div className="w-[20px] h-[20px] relative my-6">
+            <Image src="/facebook.png" fill ></Image>
+          </div>
         </Link>
         <Link href="https://x.com/luxuritweets?s=21">
-          <Image
-            src="/x-symbol.svg"
-            width={30}
-            height={30}
-            className="py-6"
-          ></Image>
+          <div className="w-[20px] h-[20px] relative my-2">
+            <Image src="/x-symbol.svg" fill ></Image>
+          </div>
         </Link>
         <Link href="https://Instagram.com/luxuri">
-          <Image
-            src="/insta.png"
-            width={30}
-            height={30}
-            className="py-6"
-          ></Image>
+          <div className="w-[20px] h-[20px] relative my-6">
+            <Image src="/insta.png" fill ></Image>
+          </div>
         </Link>
       </div>
-      <div className="border-l-[3px] border-[#A7A098] leading-[0.1em] h-[25vh] mt-[10px] mb-[20px]"></div>
+      {/* <div className="border-l-[3px] border-[#A7A098] leading-[0.1em] h-[25vh] mt-[10px] mb-[20px]"></div> */}
     </div>
   );
 }

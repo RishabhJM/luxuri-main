@@ -20,7 +20,7 @@ export default function Home() {
   const [password, setPassword] = useState("");
   return (
     <Layout>
-      <div className="w-screen">
+      <div className="w-screen overflow-x-hidden">
         <div id="home"><Hero></Hero></div>
         <div id="overview"><Overview></Overview></div>
         <div id="invstr"><InvestStrat></InvestStrat></div>
