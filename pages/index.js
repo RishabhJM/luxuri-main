@@ -20,21 +20,31 @@ export default function Home() {
   const [password, setPassword] = useState("");
   return (
     <Layout>
-      <div className="w-screen overflow-x-hidden">
-        <div id="home"><Hero></Hero></div>
-        <div id="overview"><Overview></Overview></div>
-        <div id="invstr"><InvestStrat></InvestStrat></div>
+      <div className="w-screen overflow-x-hidden no-scrollbar">
+        <div id="home">
+          <Hero></Hero>
+        </div>
+        <div id="overview">
+          <Overview></Overview>
+        </div>
+        <div id="invstr">
+          <InvestStrat></InvestStrat>
+        </div>
         <DebtStr></DebtStr>
         <Education></Education>
         <Map></Map>
         <Team></Team>
         <Partner></Partner>
-        <div id="whyus"><CompAdv></CompAdv></div>
+        <div id="whyus">
+          <CompAdv></CompAdv>
+        </div>
         <Process></Process>
         <SFTable></SFTable>
         <AsTable></AsTable>
         <Booking></Booking>
-        <div id="concierge"><Concierge></Concierge></div>
+        <div id="concierge">
+          <Concierge></Concierge>
+        </div>
       </div>
     </Layout>
   );

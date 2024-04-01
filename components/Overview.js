@@ -3,6 +3,7 @@ import Card from "./Misc/Card";
 import Image from "next/image";
 
 export default function Overview() {
+  const imageClass = "relative h-[250px] sm:h-[400px] 2xl:h-[500px] w-[200px] sm:w-[300px] lg:w-[250px] 2xl:w-[350px]";
   return (
     <div className="my-20 h-fit sm:px-20">
       <div className="text-center">
@@ -16,37 +17,26 @@ export default function Overview() {
         </p>
       </div>
       <div className="flex lg:flex-row flex-col justify-center">
-        <div className="flex md:flex-row flex-col justify-center items-center">
-          <Image
-            height={500}
-            width={300}
-            class="f4roundimg"
-            src="/Acquire-1.png"
-            alt=""
-          />
-          <Image
-            height={500}
-            width={300}
-            class="f4roundimg"
-            src="/Design-1.png"
-            alt=""
-          />
+        <div className="flex flex-row justify-center items-center">
+          <div className={imageClass}>
+            <Image class="f4roundimg" src="/Acquire-1.png" fill alt="" />
+          </div>
+          <div className={imageClass}>
+            <Image class="f4roundimg" src="/Design-1.png" fill alt="" />
+          </div>
         </div>
-        <div className="flex md:flex-row flex-col justify-center items-center">
-          <Image
-            height={500}
-            width={300}
-            class="f4roundimg"
-            src="/Rent-1.png"
-            alt=""
-          />
-          <Image
-            height={500}
-            width={300}
-            class="f4roundimg"
-            src="/hold-1.png"
-            alt=""
-          />
+        <div className="flex flex-row justify-center items-center">
+          <div className={imageClass}>
+            <Image class="f4roundimg" src="/Rent-1.png" fill alt="" />
+          </div>
+          <div className={imageClass}>
+            <Image
+              class="f4roundimg"
+              src="/hold-1.png"
+              fill
+              alt=""
+            />
+          </div>
         </div>
       </div>
     </div>

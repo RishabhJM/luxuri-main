@@ -5,17 +5,12 @@ export default function Concierge() {
   const [services, setServices] = useState(0);
   const [bgImage, setBgImage] = useState("image1.jpg");
   const buttonStyle = "h-fit rounded-2xl bg-[#d7a55a] text-black items-center font-semibold text-xs se:md py-2 px-4 w-fit cursor-pointer m-2 hover:bg-[#c57600] whitespace-nowrap";
-
-  // const handleChange = (event) => {
-  //   console.log(event.target.value);
-  //   setServices(event.target.value);
-  // };
   return (
     <div
       className="h-[100vh] bg-cover bg-center flex flex-col justify-between py-10  md:p-10 "
       style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/slider/${bgImage})` }}
     >
-      <div className="text-center">
+      <div className="text-center relative top-1/2 md:top-20">
         <h3 className="text-3xl se:text-5xl md:text-8xl font-italiana mb-4">
           {CONCIERGE[services].title}
         </h3>
@@ -24,16 +19,7 @@ export default function Concierge() {
           clients.
         </p>
       </div>
-      {/* <div className="">
-        <select value={CONCIERGE[services]} onChange={handleChange}>
-          {CONCIERGE.map((option,index) => (
-            <option key={option.value} value={index}>
-              {option.title}
-            </option>
-          ))}
-        </select>
-      </div> */}
-      <div className="flex justify-between sm:flex-wrap overflow-x-scroll px-2 no-scrollbar">
+      <div className="flex justify-between sm:flex-wrap overflow-x-scroll px-2 no-scrollbar relative bottom-4 md:bottom-10">
         <button
           className={buttonStyle}
           onClick={() => {

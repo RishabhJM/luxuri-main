@@ -11,15 +11,17 @@ const Lock = ({ onUnlock }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (password === "johny") {
+    if (password === "johny" && check) {
       onUnlock();
-    } else {
-      alert("Incorrect password");
+    } else if(!check) {
+      alert("To proceed further, agree to the terms.");
+    } else if(password!=="johny"){
+      alert("Incorrect password entered.");
     }
   };
 
   return (
-    <div className="h-fit w-fit sm:w-screen flex flex-col items-center justify-center ">
+    <div className="h-auto w-fit sm:w-screen flex flex-col items-center justify-center ">
       <div>
         <Image
           src="/luxuri-logo.svg"

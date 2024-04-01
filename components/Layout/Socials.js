@@ -6,9 +6,9 @@ export default function Socials() {
   return (
     <div class="mx-6 flex flex-col items-center">
       <div className="border-l-[3px] border-[#A7A098] leading-[0.1em] h-[90vh] my-8"></div>
-      <div className="flex bg-black flex-col items-center justify-between absolute left-4 top-[40vh]">
+      <div className="flex bg-black flex-col items-center justify-between absolute left-[12px] top-[40vh]">
         <Link href="https://www.facebook.com/luxurirentals">
-          <div className="w-[20px] h-[20px] relative my-6">
+          <div className="w-[30px] h-[30px] relative my-6">
             <Image src="/facebook.png" fill ></Image>
           </div>
         </Link>

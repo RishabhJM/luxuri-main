@@ -4,7 +4,7 @@ import SimpleSlider from "./Misc/SimpleSlider";
 
 export default function Booking() {
   return (
-    <div className="h-fit bg-cover bg-center p-10 md:p-10" style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/pexels-photo-113578555.jpg)`}}>
+    <div className="h-fit bg-cover bg-center p-10 md:px-10 md:py-16" style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/pexels-photo-113578555.jpg)`}}>
       <div className="mb-4">
         <h3 className="text-center text-3xl se:text-5xl font-italiana mb-10">
           PROPERTIES CURRENTLY MANAGED BY LUXURI
