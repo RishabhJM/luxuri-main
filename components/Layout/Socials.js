@@ -23,7 +23,6 @@ export default function Socials() {
           </div>
         </Link>
       </div>
-      {/* <div className="border-l-[3px] border-[#A7A098] leading-[0.1em] h-[25vh] mt-[10px] mb-[20px]"></div> */}
     </div>
   );
 }

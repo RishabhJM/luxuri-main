@@ -11,6 +11,7 @@ import Map from "@/components/Map";
 import Overview from "@/components/Overview";
 import Partner from "@/components/Partner";
 import Process from "@/components/Process";
+import Roadmap from "@/components/Roadmap";
 import SFTable from "@/components/SFTable";
 import Team from "@/components/Team";
 import { useState } from "react";
@@ -20,7 +21,7 @@ export default function Home() {
   const [password, setPassword] = useState("");
   return (
     <Layout>
-      <div className="w-screen overflow-x-hidden no-scrollbar">
+      <div className="w-[98.9vw] overflow-x-hidden no-scrollbar">
         <div id="home">
           <Hero></Hero>
         </div>
@@ -38,6 +39,7 @@ export default function Home() {
         <div id="whyus">
           <CompAdv></CompAdv>
         </div>
+        <Roadmap></Roadmap>
         <Process></Process>
         <SFTable></SFTable>
         <AsTable></AsTable>

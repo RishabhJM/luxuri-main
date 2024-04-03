@@ -7,10 +7,10 @@ export default function Concierge() {
   const buttonStyle = "h-fit rounded-2xl bg-[#d7a55a] text-black items-center font-semibold text-xs se:md py-2 px-4 w-fit cursor-pointer m-2 hover:bg-[#c57600] whitespace-nowrap";
   return (
     <div
-      className="h-[100vh] bg-cover bg-center flex flex-col justify-between py-10  md:p-10 "
+      className="h-[100vh] bg-cover bg-center flex flex-col justify-between py-16 mt-16  md:p-10 "
       style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/slider/${bgImage})` }}
     >
-      <div className="text-center relative top-1/2 md:top-20">
+      <div className="text-center relative top-1/2 md:top-20 px-4">
         <h3 className="text-3xl se:text-5xl md:text-8xl font-italiana mb-4">
           {CONCIERGE[services].title}
         </h3>

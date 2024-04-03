@@ -27,7 +27,7 @@ export default function Partner() {
 
             <h6 class="pb-6 text-xl md:text-2xl font-semibold">
               Luxuri® is the exclusive provider of South Florida luxury homes
-              for Marriott’s Bonvoy home rental program.
+              for Marriott&apos;s Bonvoy home rental program.
             </h6>
             <div class="border-l-8 border-gray-600 py-4">
               <div class="text-md se:text-lg pl-4">
@@ -46,10 +46,14 @@ export default function Partner() {
             <div class="border-t-2 border-gray-600">
               <div className="py-4">
                 <span class="number-gol text-5xl se:text-7xl font-italiana pr-4">
-                  $750M
+                  $400M
                 </span>
                 <p className="text-2xl tracking-widest">
-                  PROPERTIES UNDER MANAGEMENT BY LUXURI®
+                  <span className="font-bold">72</span> SOLD & UNDER MANAGEMENT{" "}
+                  <br />
+                  <span className="font-bold">143</span> DIRECT BOOKING ACCESS
+                  TO OVER <br />
+                  1000 VILLAS WORLDWIDE
                 </p>
               </div>
             </div>
@@ -60,7 +64,7 @@ export default function Partner() {
                   $300M
                 </span>
                 <p className="text-2xl tracking-widest">
-                  TRANSACTIONS BROKERED BY LUXURI®
+                  15 HIGH-END RESIDENTIAL PROPERTIES IN ASPEN
                 </p>
               </div>
             </div>
@@ -71,7 +75,7 @@ export default function Partner() {
                   1000+
                 </span>
                 <p className="text-2xl tracking-widest">
-                  DIRECT TO OWNER BOOKINGACCESS WORLDWIDE
+                  DIRECT TO OWNER BOOKING ACCESS WORLDWIDE
                 </p>
               </div>
             </div>

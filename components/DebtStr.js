@@ -30,11 +30,11 @@ export default function DebtStr() {
           </div>
           <div className={tableStyle}>
             <div className={rowKey}>TARGET LOAN TERM</div>
-            <div className={rowVal}>Revolver</div>
+            <div className={rowVal}>Revolver or interest only 5/1 or  7/1 ARM</div>
           </div>
           <div className={tableStyle}>
             <div className={rowKey}>TARGET RATE</div>
-            <div className={rowVal}>7.5%</div>
+            <div className={rowVal}>6% (rates may vary depending on market  conditions)</div>
           </div>
           <div className={tableStyle}>
             <div className={rowKey}>TARGET LOAN TYPE</div>
@@ -49,7 +49,7 @@ export default function DebtStr() {
           </h4>
           <div className="flex py-2 items-center">
             <div className="number-gol text-5xl se:text-7xl font-italiana pr-4">
-              25%
+              29.12%
             </div>
             <div className="">
               PROJECTED <br />

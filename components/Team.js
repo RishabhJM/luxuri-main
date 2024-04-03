@@ -30,11 +30,11 @@ export default function Team() {
       </h3>
       <div className="flex lg:flex-row flex-col justify-center">
         <div className="lg:w-2/5 flex justify-center">
-          <div className="bg-[#CED3E6] rounded-2xl mb-16 lg:m-0 md:w-3/4 w-fit">
+          <div className="bg-[#CED3E6] rounded-2xl h-fit mb-16 lg:m-0 md:w-3/4 w-fit">
             <Image
               width={2000}
               height={2000}
-              className="relative"
+              className="relative bottom-10"
               src={TEAM_DATA[person].src}
               alt=""
             />
