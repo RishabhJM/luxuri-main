@@ -6,6 +6,7 @@ import DebtStr from "@/components/DebtStr";
 import Education from "@/components/Education";
 import Hero from "@/components/Hero";
 import InvestStrat from "@/components/InvestStrat";
+import Footer from "@/components/Layout/Footer";
 import Layout from "@/components/Layout/Layout";
 import Map from "@/components/Map";
 import Overview from "@/components/Overview";
@@ -14,11 +15,8 @@ import Process from "@/components/Process";
 import Roadmap from "@/components/Roadmap";
 import SFTable from "@/components/SFTable";
 import Team from "@/components/Team";
-import { useState } from "react";
 
 export default function Home() {
-  const [lock,setLock] = useState(true);
-  const [password, setPassword] = useState("");
   return (
     <Layout>
       <div className="w-[98.9vw] overflow-x-hidden no-scrollbar">
@@ -47,6 +45,7 @@ export default function Home() {
         <div id="concierge">
           <Concierge></Concierge>
         </div>
+        <Footer></Footer>
       </div>
     </Layout>
   );

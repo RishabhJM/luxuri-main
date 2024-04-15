@@ -358,3 +358,99 @@ body {
 .progress-barz > div {
   @apply rounded-full;
 } */
+
+
+.progressMainWrapper {
+  background-color: black;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 10px;
+}
+
+.progressMainStyle {
+  height: 100%;
+  background-color: #00cc83;
+  width: 10px;
+}
+
+/* ::-webkit-scrollbar{
+  width: 0;
+}
+
+#scrollpath{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 100%;
+  background-color: black;
+}
+
+#progressbar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: #b56c00;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+  0%,100%{
+    filter: hue-rotate(0deg);
+  }
+  50%{
+    filter: hue-rotate(360deg);
+  }
+}
+
+#progressbar::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b56c00;
+  filter: blur(10px);
+}
+
+#progressbar::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #b56c00;
+  filter: blur(30px);
+} */
+
+.socials-pane {
+  overflow: hidden;
+  text-align: center;
+}
+
+.socials-pane::before,
+.socials-pane::after {
+  background-color: #fff;
+  content: "";
+  display: inline-block;
+  height: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.socials-pane::before {
+  right: 0.5em;
+  margin-top: -50%;
+}
+
+.socials-pane::after {
+  left: 0.5em;
+  margin-bottom: -50%;
+}

@@ -21,13 +21,13 @@ const Lock = ({ onUnlock }) => {
   };
 
   return (
-    <div className="h-auto w-fit sm:w-screen flex flex-col items-center justify-center ">
+    <div className="h-screen w-screen flex flex-col items-center justify-center relative left-12">
       <div>
         <Image
           src="/luxuri-logo.svg"
           width={250}
           height={250}
-          className="opacity-50 relative top-32 -z-10"
+          className="opacity-50 relative top-24 -z-10"
         ></Image>
       </div>
       <div>

@@ -5,8 +5,8 @@ export default function InvestStrat() {
   const boxStyle =
     "lg:w-1/2 text-[20px] px-4 py-2 se:text-sm se:px-10 se:py-6 md:px-20 md:py-10";
   const rowStyle = "flex py-6 border-style ";
-  const rowKey = "text-h4 w-1/3 text-sm se:text-md";
-  const rowVal = "text-p4 w-2/3 text-sm se:text-md";
+  const rowKey = "text-h4 w-2/5 text-sm se:text-md break-words";
+  const rowVal = "text-p4 w-3/5 text-sm se:text-md";
   return (
     <div
       class="h-fit py-20"

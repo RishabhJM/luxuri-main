@@ -9,14 +9,14 @@ export default function Nav() {
   const router = useRouter();
   const isActive = (href) => router.pathname.includes(href);
   return (
-    <div className="w-screen flex lg:flex-row flex-col justify-between py-4 px-6  bg-black bg-opacity-50 text-white fixed z-10">
+    <div className="w-screen flex lg:flex-row flex-col justify-center py-4 px-8 bg-black bg-opacity-80 text-white fixed z-10">
       <div className="lg:w-fit w-auto flex justify-between items-center">
-        <div className="items-center">
+        <div className="items-center lg:absolute left-8">
           <Image src="/luxuri-logo.svg" width={150} height={150}></Image>
         </div>
         {!openNav && (
           <div
-            className={"cursor-pointer lg:hidden"}
+            className={"items-center cursor-pointer lg:hidden"}
             onClick={() => setOpenNav(!openNav)}
           >
             <svg
@@ -37,7 +37,7 @@ export default function Nav() {
         )}
         {openNav && (
           <div
-            className={"inline-block cursor-pointer lg:hidden"}
+            className={"items-center inline-block cursor-pointer lg:hidden "}
             onClick={() => setOpenNav(!openNav)}
           >
             <svg
@@ -75,7 +75,7 @@ export default function Nav() {
           </nav>
         </div>
       )}
-      <nav className="w-1/2 hidden lg:flex justify-between text-md">
+      <nav className="w-1/2 hidden lg:flex  justify-between text-md">
         {NAV_LINKS.map((item) => (
           <Link
             href={item.href}
@@ -88,14 +88,14 @@ export default function Nav() {
           </Link>
         ))}
       </nav>
-      <div>
+      {/* <div>
         <Image
           className="hidden lg:block"
           src="/Lets-Talk-business.png"
           width={75}
           height={75}
         ></Image>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -4,14 +4,21 @@ import React, { useState } from "react";
 
 export default function Team() {
   const [person, setPerson] = useState(0);
+  const [showMore, setShowMore] = useState(false);
   function nextPerson() {
-    if (person < TEAM_DATA.length-1) {
+    if (person < TEAM_DATA.length - 1) {
       setPerson(person + 1);
+      setShowMore(false);
+    }else{
+      setPerson(0);
     }
   }
   function prevPerson() {
     if (person > 0) {
       setPerson(person - 1);
+      setShowMore(false);
+    }else{
+      setPerson(TEAM_DATA.length - 1);
     }
   }
   return (
@@ -47,7 +54,17 @@ export default function Team() {
           <span className="text-[#fad49c] font-semibold text-xl sm:text-3xl">
             {TEAM_DATA[person].desg}
           </span>
-          <p className="text-md sm:text-lg py-4">{TEAM_DATA[person].info}</p>
+          <p className="text-md sm:text-lg py-4">
+            {showMore
+              ? TEAM_DATA[person].info
+              : TEAM_DATA[person].info.substring(0, 250)}
+            <span
+              className="text-gray-400 cursor-pointer underline px-2"
+              onClick={() => setShowMore(!showMore)}
+            >
+              {showMore ? "show less" : "show more"}
+            </span>
+          </p>
           <div className="flex sm:flex-row flex-col justify-between items-center">
             <div className="flex mb-10">
               <Image
@@ -89,7 +106,9 @@ export default function Team() {
                   className="cursor-pointer"
                   src="/Testi/noun-arrow-down-24249633.svg"
                   alt=""
-                  onClick={() => {prevPerson()}}
+                  onClick={() => {
+                    prevPerson();
+                  }}
                 />
                 <Image
                   width={70}
@@ -97,7 +116,9 @@ export default function Team() {
                   className="cursor-pointer"
                   src="/Testi/noun-arrow-down-24249634.svg"
                   alt=""
-                  onClick={() => {nextPerson()}}
+                  onClick={() => {
+                    nextPerson();
+                  }}
                 />
               </div>
             </div>
