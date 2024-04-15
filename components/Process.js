@@ -7,7 +7,7 @@ export default function Process() {
         PROCESS: ACQUISITION TO BOOKING
       </h3>
 
-      <div className="comp-maindiv flex justify-center">
+      <div className="comp-maindiv flex justify-center items-center">
         <div className="hidden md:block">
           <img src="/Frame-92.svg" alt="" />
         </div>

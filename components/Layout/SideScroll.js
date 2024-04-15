@@ -1,46 +1,34 @@
-// components/VerticalProgressBar.js
-// import { useEffect, useState } from 'react';
+// ProgressBar.js
 
-// const SideScroll = () => {
-//   const [scrollPercentage, setScrollPercentage] = useState(0);
+import React, { useState, useEffect } from 'react';
 
-//   useEffect(() => {
-//     const handleScroll = () => {
-//       const windowHeight = window.innerHeight;
-//       const documentHeight = document.body.clientHeight;
-//       const scrollTop = window.scrollY;
-//       const trackLength = documentHeight - windowHeight;
-//       const percentageScrolled = (scrollTop / trackLength) * 100;
+const ProgressBar = () => {
+  const [scrollPercentage, setScrollPercentage] = useState(0);
 
-//       setScrollPercentage(percentageScrolled);
-//     };
+  useEffect(() => {
+    const updateScrollPercentage = () => {
+      const windowHeight = window.innerHeight;
+      const fullHeight = document.body.clientHeight;
+      const scrolled = window.scrollY;
+      const progress = (scrolled / (fullHeight - windowHeight)) * 100;
+      setScrollPercentage(progress);
+    };
 
-//     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', updateScrollPercentage);
 
-//     return () => {
-//       window.removeEventListener('scroll', handleScroll);
-//     };
-//   }, []);
+    return () => {
+      window.removeEventListener('scroll', updateScrollPercentage);
+    };
+  }, []);
 
-//   return (
-//     <div
-//       className="fixed right-0 top-0 h-full w-3 bg-gray-400"
-//       style={{ height: '100vh' }}
-//     >
-//       <div
-//         className="absolute bottom-0 h-0 bg-green-500"
-//         style={{ height: `${scrollPercentage}%`, transition: 'height 0.2s' }}
-//       ></div>
-//     </div>
-//   );
-// };
-
-// export default SideScroll;
-
-export default function SideScroll() {
   return (
-    <div class="">
-      <div className="border-l-[3px] border-[#A7A098] leading-[0.1em] h-[90vh] my-8"></div>
+    <div className="fixed top-0 right-0 h-full w-2 bg-gray-300">
+      <div
+        className="absolute bottom-0 bg-blue-500"
+        style={{ height: `${scrollPercentage}%` }}
+      />
     </div>
   );
-}
+};
+
+export default ProgressBar;

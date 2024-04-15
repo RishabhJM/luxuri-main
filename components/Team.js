@@ -67,11 +67,21 @@ export default function Team() {
           </p>
           <div className="flex sm:flex-row flex-col justify-between items-center">
             <div className="flex mb-10">
+            {/* <Image
+                width={100}
+                height={80}
+                className="rounded-full mr-6 f4roundimg2"
+                src="/johny.png"
+                alt=""
+                onClick={() => {
+                  setPerson(0);
+                }}
+              /> */}
               <Image
                 width={100}
-                height={100}
+                height={80}
                 className="rounded-full mr-6 f4roundimg2"
-                src="/Rectangle-52.png"
+                src="/cmack.png"
                 alt=""
                 onClick={() => {
                   setPerson(1);
@@ -79,9 +89,9 @@ export default function Team() {
               />
               <Image
                 width={100}
-                height={100}
+                height={80}
                 className="rounded-full mr-6 f4roundimg2"
-                src="/Rectangle-53.jpg"
+                src="/andre.png"
                 alt=""
                 onClick={() => {
                   setPerson(2);
@@ -89,12 +99,32 @@ export default function Team() {
               />
               <Image
                 width={100}
-                height={100}
+                height={80}
                 className="rounded-full mr-6 f4roundimg2"
-                src="/Rectangle-54.jpg"
+                src="/larry.png"
                 alt=""
                 onClick={() => {
                   setPerson(3);
+                }}
+              />
+              <Image
+                width={100}
+                height={80}
+                className="rounded-full mr-6 f4roundimg2"
+                src="/ordori.png"
+                alt=""
+                onClick={() => {
+                  setPerson(4);
+                }}
+              />
+              <Image
+                width={100}
+                height={80}
+                className="rounded-full mr-6 f4roundimg2"
+                src="/Rectangle-53.jpg"
+                alt=""
+                onClick={() => {
+                  setPerson(5);
                 }}
               />
             </div>

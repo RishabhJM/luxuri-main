@@ -19,7 +19,7 @@ export default function Concierge() {
           clients.
         </p>
       </div>
-      <div className="flex justify-between sm:flex-wrap overflow-x-scroll px-2 no-scrollbar relative bottom-4 md:bottom-10">
+      <div className="flex justify-between overflow-x-scroll px-2 no-scrollbar relative bottom-4 md:bottom-10">
         <button
           className={buttonStyle}
           onClick={() => {

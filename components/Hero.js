@@ -3,13 +3,12 @@ import React from "react";
 import ProgressLine from "./Misc/ProgressLine";
 import SimpleSlider from "./Misc/SimpleSlider";
 import { HERO_IMAGES } from "@/constants/constants";
-import SideScroll from "./Layout/SideScroll";
 import Socials from "./Layout/Socials";
 
 export default function Hero() {
   return (
-    <div className="flex items-center">
-      <div className="hidden sm:block fixed"><Socials></Socials></div>
+    <div className="flex">
+      <Socials></Socials>
       <div className="flex lg:flex-row flex-col-reverse w-full mt-16">
         <div className="lg:w-1/2 px-6 py-10 se:px-10 se:py-20 md:px-20 md:py-40 md:pt-60">
           <div className="flex flex-col items-center lg:items-start">
@@ -77,12 +76,6 @@ export default function Hero() {
           </SimpleSlider>
         </div>
       </div>
-      {/* <div className="hidden sm:block fixed right-6 top-0"><SideScroll></SideScroll></div> */}
     </div>
-    // <div className="flex justify-between w-[80vw]">
-    //   {/* <Socials></Socials> */}
-
-    //   <SideScroll></SideScroll>
-    // </div>
   );
 }
