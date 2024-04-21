@@ -65,7 +65,7 @@ export default function Nav() {
                 href={item.href}
                 key={item.key}
                 className={
-                  isActive(item.href) ? "p-4 text-[#FD9E0F]" : "p-4 text-white"
+                  isActive(item.href) ? "p-4 text-[#FD9E0F]" : "p-4 text-white hover:text-[#FD9E0F]"
                 }
                 onClick={() => setOpenNav(!openNav)}
               >
@@ -81,7 +81,7 @@ export default function Nav() {
             href={item.href}
             key={item.key}
             className={
-              isActive(item.href) ? "p-4 text-[#FD9E0F]" : "p-4 text-white"
+              isActive(item.href) ? "p-4 text-[#FD9E0F]" : "p-4 text-white hover:text-[#FD9E0F]"
             }
           >
             {item.label}

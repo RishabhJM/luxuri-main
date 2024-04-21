@@ -17,7 +17,7 @@ export default function CompAdv() {
       }}
     >
       <h3 className="pb-20 font-italiana text-3xl se:text-5xl text-center mb-3">
-        BENIFITS OF JOINING THE LUXURI TEAM
+        BENEFITS OF JOINING THE LUXURI TEAM
       </h3>
       <div className="lg:mx-20">
         <div className="flex lg:flex-row flex-col justify-between">

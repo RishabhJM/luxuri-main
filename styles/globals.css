@@ -2,37 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-} */
-
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 body {
   background-color: #000;
   color: white;
-  /* color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
 }
 
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
 
 .progressVisualFull {
   display: flex;
@@ -171,13 +146,21 @@ body {
   margin: 0 10px;
 }
 
-/* .slick-slide {
-  .rooms-label {
-    z-index: 10;
-    position:fixed;
-    bottom: 120px;
-  }
-} */
+.slick-list {
+  overflow: hidden;
+  margin: 0;
+  padding:0 0 0 6px;
+}
+
+.slick-next:before, .slick-prev:before {
+  font-family: slick;
+  font-size: 34px!important;
+  line-height: 1;
+  opacity: .75;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
 
 .category-button {
   margin: 0 10px 12px;
@@ -323,43 +306,6 @@ body {
   background-size: 90%;
 }
 
-/* .progress-section{
-  position: fixed;
-  right: 50px;
-  top:40%;
-  height: 20%;
-  display: flex;
-  justify-content: space-between;
-  will-change: transform;
-  transition: 0.3s ease-out;
-}
-.progress-bar-wrap{
-  position: relative;
-  width: 5px;
-  border: 1px solid black;
-  border-radius: 10px;
-  overflow: hidden;
-  background-color: rgb(70,70,70);
-}
-
-.progress-bar{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 0%;
-  background-color: rgv(189,189,189);
-} */
-
-/* In your Tailwind configuration */
-/* .progress-barz {
-  @apply fixed top-0 left-0 h-screen w-2 bg-gray-200;
-}
-
-.progress-barz > div {
-  @apply rounded-full;
-} */
-
-
 .progressMainWrapper {
   background-color: black;
   height: 100%;
@@ -376,58 +322,10 @@ body {
   width: 10px;
 }
 
-/* ::-webkit-scrollbar{
-  width: 0;
+::-webkit-scrollbar{
+  display: none;
 }
 
-#scrollpath{
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 10px;
-  height: 100%;
-  background-color: black;
-}
-
-#progressbar{
-  position: fixed;
-  top: 0;
-  right: 0;
-  height: 100%;
-  background-color: #b56c00;
-  animation: animate 5s linear infinite;
-}
-
-@keyframes animate{
-  0%,100%{
-    filter: hue-rotate(0deg);
-  }
-  50%{
-    filter: hue-rotate(360deg);
-  }
-}
-
-#progressbar::before{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #b56c00;
-  filter: blur(10px);
-}
-
-#progressbar::after{
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #b56c00;
-  filter: blur(30px);
-} */
 
 .socials-pane {
   overflow: hidden;

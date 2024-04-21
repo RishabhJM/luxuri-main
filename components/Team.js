@@ -54,22 +54,14 @@ export default function Team() {
           <span className="text-[#fad49c] font-semibold text-xl sm:text-3xl">
             {TEAM_DATA[person].desg}
           </span>
-          <p className="text-md sm:text-lg py-4">
-            {showMore
-              ? TEAM_DATA[person].info
-              : TEAM_DATA[person].info.substring(0, 250)}
-            <span
-              className="text-gray-400 cursor-pointer underline px-2"
-              onClick={() => setShowMore(!showMore)}
-            >
-              {showMore ? "show less" : "show more"}
-            </span>
+          <p className="text-md sm:text-lg py-4 overflow-scroll h-[200px] my-4 text-justify pr-4">
+          {TEAM_DATA[person].info}
           </p>
           <div className="flex sm:flex-row flex-col justify-between items-center">
-            <div className="flex mb-10">
+            <div className="flex mb-10 overflow-scroll mr-4">
             {/* <Image
-                width={100}
-                height={80}
+                width={96}
+                height={95}
                 className="rounded-full mr-6 f4roundimg2"
                 src="/johny.png"
                 alt=""
@@ -78,8 +70,8 @@ export default function Team() {
                 }}
               /> */}
               <Image
-                width={100}
-                height={80}
+                width={96}
+                height={95}
                 className="rounded-full mr-6 f4roundimg2"
                 src="/cmack.png"
                 alt=""
@@ -88,8 +80,8 @@ export default function Team() {
                 }}
               />
               <Image
-                width={100}
-                height={80}
+                width={96}
+                height={95}
                 className="rounded-full mr-6 f4roundimg2"
                 src="/andre.png"
                 alt=""
@@ -98,8 +90,8 @@ export default function Team() {
                 }}
               />
               <Image
-                width={100}
-                height={80}
+                width={96}
+                height={95}
                 className="rounded-full mr-6 f4roundimg2"
                 src="/larry.png"
                 alt=""
@@ -108,8 +100,8 @@ export default function Team() {
                 }}
               />
               <Image
-                width={100}
-                height={80}
+                width={96}
+                height={95}
                 className="rounded-full mr-6 f4roundimg2"
                 src="/ordori.png"
                 alt=""
@@ -118,8 +110,8 @@ export default function Team() {
                 }}
               />
               <Image
-                width={100}
-                height={80}
+                width={96}
+                height={95}
                 className="rounded-full mr-6 f4roundimg2"
                 src="/Rectangle-53.jpg"
                 alt=""

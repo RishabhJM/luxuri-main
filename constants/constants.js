@@ -187,3 +187,21 @@ export const TEAM_DATA = [
     src: "/Testi/Group60.png",
   },
 ];
+
+export const CITIES = [
+  "LONDON",
+  "PARIS",
+  "HAMPTONS",
+  "DUBAI",
+  "CAPRI",
+  "POSITANO",
+  "CANNES",
+  "BAHAMAS",
+  "ST TROPEZ",
+  "MYKONOS",
+  "MONACO",
+  "SARDINIA",
+  "CAPE TOWN",
+  "IBIZA",
+  "ZEDDA (SAUDI ARABIA)"
+];

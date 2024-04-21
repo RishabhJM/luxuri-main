@@ -15,7 +15,7 @@ export default function Booking() {
           PROPERTIES CURRENTLY MANAGED BY LUXURI
         </h3>
       </div>
-      <div className="px-10">
+      <div className="md:px-10">
         <SimpleSlider
           dots={true}
           noOfSlides={3}
@@ -33,7 +33,7 @@ export default function Booking() {
                 <div className="font-italiana text-center border-b-2 border-gray-500 py-4">
                   {t.title}
                 </div>
-                <div className="p-2 md:p-4 text-[8px] md:text-xs flex md:flex-row flex-col text-center justify-between">
+                <div className="p-2 md:p-4 text-[16px] lg:text-xs flex md:flex-row flex-col text-center justify-between">
                   <span>
                     GROSS BOOKINGS:${" "}
                     <span className="text-luxuri-golden">{t.bookings}</span>{" "}

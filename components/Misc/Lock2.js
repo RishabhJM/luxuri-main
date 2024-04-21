@@ -4,7 +4,7 @@ import { useState } from "react";
 import Modal from "./Modal";
 import Image from "next/image";
 
-const Lock = ({ onUnlock }) => {
+export default Lock2 = ({ onUnlock }) => {
   const [password, setPassword] = useState("");
   const [modalOpen, setModalOpen] = useState(false);
   const [check, setCheck] = useState(true);
@@ -13,52 +13,49 @@ const Lock = ({ onUnlock }) => {
     e.preventDefault();
     if (password === "johny" && check) {
       onUnlock();
-    } else if (!check) {
+    } else if(!check) {
       alert("To proceed further, agree to the terms.");
-    } else if (password !== "johny") {
+    } else if(password!=="johny"){
       alert("Incorrect password entered.");
     }
   };
 
   return (
-    <div className=" flex flex-col items-center justify-center">
-      <div className="mt-10">
+    <div className="h-screen w-screen flex flex-col items-center justify-center relative left-12">
+      <div>
         <Image
           src="/luxuri-logo.svg"
           width={250}
           height={250}
-          className="opacity-50 -z-10"
+          className="opacity-50 relative top-24 -z-10"
         ></Image>
       </div>
-      <div className="relative w-[90vw] h-[70vh] se:w-[600px] se:h-[600px] left-6">
+      <div>
         <Image
           src="/lock.svg"
-          fill
-          className="opacity-25 relative -z-10"
+          width={400}
+          height={400}
+          className="opacity-25 relative left-6 -z-10"
           alt=""
         ></Image>
       </div>
 
-      <div className="py-10 z-10 absolute bottom-2 left-1/2 transform -translate-x-1/2 -translate-y-1">
-        <h2 class="leading-normal relative text-center text-2xl md:text-6xl">
-          Please enter password <br /> to view{" "}
-          <span className="leading-normal text-[#898989]"> the website</span>
+      <div className="py-10">
+        <h2 class="bottom-2 mt-[-260px] leading-normal relative text-center text-2xl md:text-6xl">
+          Please enter password <br /> to view <span className="leading-normal text-[#898989]"> the website</span>
         </h2>
-        <form
-          class="flex flex-col items-center justify-center"
-          onSubmit={handleSubmit}
-        >
+        <form class="flex flex-col items-center justify-center" onSubmit={handleSubmit}>
           <div className="my-4 flex relative left-6">
             <input
               type="password"
               name="password"
               placeholder="Enter Password..."
-              className="bg-[#2A2A33] rounded-full w-[200px] se:w-[300px] p-4 outline-none "
+              className="bg-[#2A2A33] rounded-full w-[300px] p-4 outline-none "
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
             <button
-              class="hover:bg-[#ddd] bg-white text-black rounded-full p-4 font-medium text-lg border-2 border-black leading-normal relative right-12 text-center w-[120px]"
+              class="hover:bg-[#ddd] bg-white text-black rounded-full p-4 font-medium text-lg border-2 border-black leading-normal relative right-12 text-center w-[120px]" 
               type="submit"
             >
               Let&apos;s go
@@ -97,17 +94,9 @@ const Lock = ({ onUnlock }) => {
           <div class="forgot-row2">Request Password</div>
         </div>
       </div>
-      {modalOpen && (
-        <Modal setOpenModal={setModalOpen} setCheck={setCheck}></Modal>
-      )}
+      {modalOpen && <Modal setOpenModal={setModalOpen} setCheck={setCheck}></Modal>}
     </div>
   );
 };
-{
-  /* <div className="h-screen w-screen flex flex-col items-center justify-center relative left-12">
 
 
-
-</div> */
-}
-export default Lock;

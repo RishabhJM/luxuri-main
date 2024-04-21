@@ -1,7 +1,7 @@
 function Modal({ setOpenModal, setCheck }) {
   return (
-    <div className="w-screen h-screen fixed flex justify-center items-center text-black">
-      <div className="modalContainer w-[500px] h-[600px] sm:w-[1000px] sm:h-[600px]">
+    <div className="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 fixed flex justify-center items-center text-black z-50">
+      <div className="modalContainer h-[600px] w-[90vw] sm:h-[600px]">
         <div className="bg-gray-300 justify-between flex items-center py-4 px-2">
           <h5 className="text-center flex justify-between text-4xl font-semibold">AGREEMENT</h5>
           <button

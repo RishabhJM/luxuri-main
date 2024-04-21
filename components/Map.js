@@ -1,9 +1,19 @@
+import { CITIES } from "@/constants/constants";
+import { id_ID } from "@faker-js/faker";
 import Image from "next/image";
 import React, { useState } from "react";
 
 export default function Map() {
   const colBtn = "mt-[10px] mr-[20px] se:text-lg text-xs";
-  const [map,setMap] = useState("/MAP.svg");
+  const [map, setMap] = useState("/MAP.svg");
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleButtonClick = (id) => {
+    console.log(id);
+    setActiveButton(id);
+    setMap(`/MAP (${id + 1}).svg`);
+    console.log(map);
+  };
   return (
     <div className="p-10 h-fit flex lg:flex-row flex-col items-center">
       <div className="lg:w-2/5 px-4 md:px-20">
@@ -41,51 +51,21 @@ export default function Map() {
         </div>
         <div className="px-4">
           <div className="flex overflow-x-scroll px-2 no-scrollbar sm:flex-wrap mb-4">
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>LONDON</button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP (2).svg")}}>PARIS</button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP (3).svg")}}>HAMPTONS</button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP (4).svg")}}>DUBAI</button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP (5).svg")}}>CAPRI</button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP (6).svg")}}>POSITANO</button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>CANNES</button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>BAHAMAS</button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>ST TROPEZ </button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>MYKONOS </button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>MONOCO </button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>SARDINIA </button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>CAPE TOWN </button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>IBIZA </button>
-            </div>
-            <div className={colBtn}>
-              <button className="btn-style-1" onClick={() => {setMap("/MAP-l (1).svg")}}>ZEDDA (SAUDI ARABIA)</button>
-            </div>
+            {CITIES.map((city, index) => (
+              <div key={index} className={colBtn}>
+                <button
+                  id={index}
+                  className={
+                    activeButton === index
+                      ? "bg-[#b56c00] py-[4px] px-[12px] text-white rounded-xl text-base"
+                      : "bg-[#181818] py-[4px] px-[12px] text-white rounded-xl text-base hover:bg-[#b56c00]"
+                  }
+                  onClick={() => handleButtonClick(index)}
+                >
+                  {city}
+                </button>
+              </div>
+            ))}
           </div>
         </div>
       </div>

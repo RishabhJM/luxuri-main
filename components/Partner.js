@@ -83,8 +83,10 @@ export default function Partner() {
         </div>
       </div>
 
-      <div class="relative left-8 w-[95vw] h-[30px] sm:h-[60px] lg:h-[80px]">
-        <Image fill src="/companies.png" alt="" />
+      <div className="flex justify-center">
+        <div className="relative w-[90vw] h-[30px] sm:h-[60px] lg:h-[80px] flex justify-center items-center">
+          <Image className="mx-auto" src="/companies.png" alt="" fill/>
+        </div>
       </div>
     </div>
   );
