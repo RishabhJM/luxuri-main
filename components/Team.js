@@ -4,7 +4,6 @@ import React, { useState } from "react";
 
 export default function Team() {
   const [person, setPerson] = useState(0);
-  const [showMore, setShowMore] = useState(false);
   function nextPerson() {
     if (person < TEAM_DATA.length - 1) {
       setPerson(person + 1);
