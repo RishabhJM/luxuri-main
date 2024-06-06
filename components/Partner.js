@@ -4,7 +4,7 @@ import React from "react";
 export default function Partner() {
   return (
     <div class="h-fit">
-      <div className="p-10 md:p-20">
+      <div className="px-4 se:px-10 md:px-20 py-10 md:p-20">
         <h3 class="pb-10 font-italiana text-3xl se:text-5xl md:text-7xl text-center mb-3">
           Key Partner : LUXURI
         </h3>

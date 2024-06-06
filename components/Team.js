@@ -22,7 +22,7 @@ export default function Team() {
   }
   return (
     <div
-      className="h-fit px-10 py-10"
+      className="h-fit px-4 se:px-10 md:px-20 py-10"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/background-34.jpg)`,
         backgroundSize: "cover",
@@ -40,7 +40,7 @@ export default function Team() {
             <Image
               width={2000}
               height={2000}
-              className="relative bottom-10"
+              className="relative"
               src={TEAM_DATA[person].src}
               alt=""
             />

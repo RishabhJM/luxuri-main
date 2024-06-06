@@ -9,7 +9,7 @@ export default function Roadmap() {
   const imgStyle = "flex flex-col items-center justify-center pb-2";
   return (
     <div
-      className="h-fit p-10 md:py-20 md:px-44"
+      className="h-fit px-4 se:px-10 py-10 md:py-20 md:px-44"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/path378.svg)`,
         backgroundSize: "cover",

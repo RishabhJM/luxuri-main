@@ -15,8 +15,8 @@ export default function Map() {
     console.log(map);
   };
   return (
-    <div className="p-10 h-fit flex lg:flex-row flex-col items-center">
-      <div className="lg:w-2/5 px-4 md:px-20">
+    <div className="px-4 se:px-10 md:px-20 py-10 h-fit flex lg:flex-row flex-col items-center">
+      <div className="lg:w-2/5 md:px-20">
         <Image
           width={400}
           height={400}

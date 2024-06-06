@@ -4,7 +4,7 @@ import React from "react";
 export default function Education() {
   return (
     <div
-      class="p-10 h-fit flex lg:flex-row flex-col-reverse"
+      class=" py-2 se:text-sm px-4 se:px-10 md:px-20 se:py-6  md:py-10 h-fit flex lg:flex-row flex-col-reverse"
       style={{
         backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),linear-gradient(to top, rgba(0,0,0,0) 80%, rgba(0,0,0,1)),url(/Frame-91.svg)`,
         backgroundSize: "cover",
@@ -12,7 +12,7 @@ export default function Education() {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div class="lg:w-1/2 py-4 se:px-10 se:py-6 md:px-20 md:py-10 flex flex-col justify-center">
+      <div class="lg:w-1/2 py-4  se:py-6 md:py-10 flex flex-col justify-center">
         <h5 class="pb-10 text-xl se:text-3xl font-semibold">
           Strong Luxury Property Markets in South Florida and Aspen
         </h5>
